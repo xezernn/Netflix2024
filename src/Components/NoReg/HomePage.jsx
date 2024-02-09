@@ -2,6 +2,9 @@ import React from 'react'
 import Logo from "../../assets/img/logo.png"
 import Bg from "../../assets/img/bgHeader.jpg"
 import Tv from "../../assets/img/tv.png"
+import Tel from "../../assets/img/tel.jpg"
+import boxshot from "../../assets/img/boxshot.png"
+import DowIcon from "../../assets/img/dowIcon.gif"
 import video1 from '../../assets/img/video1.mp4'
 function HomePage() {
     return (
@@ -33,7 +36,7 @@ function HomePage() {
 
                                         <div className="absolute right-[10%] top-[25%] ">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="CaretDown" aria-hidden="true">
+                                                className="default-ltr-cache-4z3qvp e1svuwfo1" data-name="CaretDown" aria-hidden="true">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                                     d="M11.5976 6.5C11.7461 6.5 11.8204 6.67956 11.7154 6.78457L8.23574 10.2643C8.10555 10.3945 7.89445 10.3945 7.76425 10.2643L4.28457 6.78457C4.17956 6.67956 4.25393 6.5 4.40244 6.5H11.5976Z"
                                                     fill="currentColor"></path>
@@ -68,25 +71,50 @@ function HomePage() {
 
             </header>
 
-            <section className='h-[85vh] w-full border-t-[8px] border-[#232323] py-[56px] med:h-[90vh] w640:h-[100vh] tabl:p-0 tabl:h-[81vh] '>
-                <div className='w-[90%] h-auto mx-auto flex flex-col tabl:flex-row tabl:items-center tabl:justify-center tabl:h-full'>
-                    <div className='text-white text-center tabl:text-start tabl:w-2/4 '>
-                        <h2 className='text-[2rem] tabl:text-5xl font-[700] m-auto '>Enjoy on your TV</h2>
-                        <p className='text-[1.125rem] tabl:text-2xl my-4'>
-                            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
-                        </p>
+            <section className='border-t-[8px] border-[#232323]'>
+                <div className='flex w-[90%] flex-col text-white m-auto text-center py-[56px]  tabl:flex-row tabl:items-center tabl:w-[82%]  '  >
+                    <div className="tabl:w-2/4 ">
+                        <h2 className='text-[2rem] font-[700] leading-normal tabl:text-[3rem] tabl:font-[900] tabl:text-start '>Enjoy on your TV</h2>
+                        <p className="my-4 text-[1.125rem] tabl:text-[1.5rem] tabl:text-start ">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
                     </div>
-                    <div className='relative w-full w700:w-[80%] m-auto w640:h-[50vh] tabl:w-2/4 tabl:text-end '>
-                        <img className='w-full h-full absolute z-10  tabl:w-[70%]   ' src={Tv} alt="Tv" />
-                        <div className='w-full h-full  tabl:w-[80%] '>
-                            <video className='w-full absolute z-0 inset-0 w700:h-[80%] tabl:w-[70%] ' autoplay="autoplay"  muted="true" loop="true">
+                    <div className="w-full relative mt-6 mx-auto md:max-w-[690px] tabl:w-2/4  ">
+                        <img className="w-full" src={Tv} alt="" />
+                        <img className="w-full absolute inset-0 z-10 " src={Tv} alt="" />
+                        <div className="absolute inset-0 z-[9">
+                            <video className='w-[99%] m-auto' autoplay="autoplay" muted="true" loop="true">
                                 <source src={video1} type="video/mp4" />
                             </video>
                         </div>
                     </div>
-
                 </div>
             </section>
+
+
+            <section className='border-t-[8px] border-[#232323]'>
+                <div className='flex w-[90%] flex-col text-white m-auto text-center py-[56px]  tabl:flex-row-reverse tabl:items-center tabl:w-[82%]  '  >
+                    <div className="tabl:w-2/4 ">
+                        <h2 className='text-[2rem] font-[700] leading-normal tabl:text-[3rem] tabl:font-[900] tabl:text-start '>Download your shows to watch offline</h2>
+                        <p className="my-4 text-[1.125rem] tabl:text-[1.5rem] tabl:text-start ">Save your favorites easily and always have something to watch.</p>
+                    </div>
+                    <div className="w-full relative mt-6 mx-auto md:max-w-[690px] tabl:w-2/4 ">
+                        <img className='w-full' src={Tel} alt="" />
+                        <div className="flex justify-between items-center border border-[#333] rounded-[12px] overflow-hidden w-[60%] bg-black py-1 px-[10px] absolute bottom-[10%] left-[20%] tabl:w-2/4 tabl:left-[24.5%]   ">
+                            <img className="img1 h-[3rem] tabl:h-[5rem]" src={boxshot} alt="" />
+                            <div className="soz">
+                                <strong>Stranger Things</strong>
+                                <p className='text-[0.75rem] text-[#0071eb]  '>
+                                    Downloading...
+                                </p>
+                            </div>
+                            <img className="img2 h-[2rem] tabl:h-[3rem] " src={DowIcon} alt="" />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
 
             <section className='h-[200vh] bg-white'></section>
         </div>
