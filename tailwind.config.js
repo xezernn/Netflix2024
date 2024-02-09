@@ -7,6 +7,8 @@ export default {
   theme: {
     screens: {
       'med': '600px',
+      'w640': '640px',
+      'w700': '700px',
       'tabl': '960px',
     },
     extend: {},

@@ -1,12 +1,13 @@
 import React from 'react'
 import Logo from "../../assets/img/logo.png"
 import Bg from "../../assets/img/bgHeader.jpg"
+import Tv from "../../assets/img/tv.png"
+import video1 from '../../assets/img/video1.mp4'
 function HomePage() {
     return (
         <div className="bg-black">
 
             <header style={{ background: `url(${Bg}) center/cover` }} className='h-[67vh] tabl:h-[100vh] netflixFont '>
-                {/* style={{background : "linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);"}} */}
                 <div className='h-full overflow-clip bgGradient  ' >
                     <div className='bgOpacity h-full relative'>
                         <div className="container max-w-[initial]  med:w-600 p-6 absolute top-0 ">
@@ -17,8 +18,8 @@ function HomePage() {
 
                                 <div className="items-center flex-shrink-0 flex gap-2">
 
-                                    <div className="relative text-white flex items-center w-[64px] h-[32px] rounded-2xl med:w-[130px] med:px-[10px] ">
-                                        <div className="absolute left-[20%] top-[30%]   ">
+                                    <div className="relative text-white flex items-center w-16 h-[32px] rounded-2xl med:w-[130px] med:px-[10px] ">
+                                        <div className="absolute left-[20%] top-[15%]   ">
                                             <svg className='w-4 ' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                 stroke="currentColor" class="w-6 h-6">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -55,7 +56,7 @@ function HomePage() {
                                 </p>
                                 <div className='mt-4 flex flex-wrap w-full max-w-[36.625rem] flex-col m-auto med:flex-row  gap-4 items-center '>
                                     <input type="text" className='text-white leading-[1.5] text-[1rem] px-4 pb-2 pt-3 min-h-4 min-w-4 border w-full med:w-auto border-[#808080b3] border-solid rounded bg-[#161616b3]  ' placeholder="Email address" id="" />
-                                    <button className='min-h-[3rem] flex bg-[#E50914] justify-center items-center rounded text-[1.125rem] py-2 px-4'>
+                                    <button className='min-h-[3rem] w-auto flex bg-[#E50914] justify-center items-center rounded text-[1.125rem] py-2 px-4'>
                                         <span className='font-[700] '>Get Started</span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
                                     </button>
@@ -67,17 +68,27 @@ function HomePage() {
 
             </header>
 
-            <section className='h-[67vh] border-t-[8px] border-[#232323] flex py-[56px] '>
-                <div className='w-[90%] mx-auto '>
-                    <div className='text-white text-center '>
-                        <h2 className='text-[2rem] font-[700] m-auto '>Enjoy on your TV</h2>
-                        <p className='text-[1.125rem] my-4'>
+            <section className='h-[85vh] w-full border-t-[8px] border-[#232323] py-[56px] med:h-[90vh] w640:h-[100vh] tabl:p-0 tabl:h-[81vh] '>
+                <div className='w-[90%] h-auto mx-auto flex flex-col tabl:flex-row tabl:items-center tabl:justify-center tabl:h-full'>
+                    <div className='text-white text-center tabl:text-start tabl:w-2/4 '>
+                        <h2 className='text-[2rem] tabl:text-5xl font-[700] m-auto '>Enjoy on your TV</h2>
+                        <p className='text-[1.125rem] tabl:text-2xl my-4'>
                             Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
                         </p>
+                    </div>
+                    <div className='relative w-full w700:w-[80%] m-auto w640:h-[50vh] tabl:w-2/4 tabl:text-end '>
+                        <img className='w-full h-full absolute z-10  tabl:w-[70%]   ' src={Tv} alt="Tv" />
+                        <div className='w-full h-full  tabl:w-[80%] '>
+                            <video className='w-full absolute z-0 inset-0 w700:h-[80%] tabl:w-[70%] ' autoplay="autoplay"  muted="true" loop="true">
+                                <source src={video1} type="video/mp4" />
+                            </video>
+                        </div>
                     </div>
 
                 </div>
             </section>
+
+            <section className='h-[200vh] bg-white'></section>
         </div>
     )
 }
