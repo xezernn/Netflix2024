@@ -1,0 +1,89 @@
+@font-face {
+    font-display: optional;
+    font-family: NKufi;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: NKufi;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: GraphikTH;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: GraphikTH;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff) format("woff")
+}
+
+
+@font-face {
+    font-display: optional;
+    font-family: "Netflix Sans";
+    font-weight: 100;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: "Netflix Sans";
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: "Netflix Sans";
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: "Netflix Sans";
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: "Netflix Sans";
+    font-weight: 700;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: "Netflix Sans";
+    font-weight: 900;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff")
+}
+*{
+    font-family: sans-serif;
+}
+
+.bgGradient{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);;
+}
+
+.bgOpacity{
+    background: rgb(0 0 0 / 40%);
+}
+
+.netflixFont{
+    font-family: "Netflix Sans" ;
+}
+
+.w-600{
+    width: calc(100% + 0.5rem)
+}

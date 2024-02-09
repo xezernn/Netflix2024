@@ -1,8 +1,10 @@
 import React from 'react'
+import HomePage from './Components/NoReg/HomePage'
 
 function App() {
   return (
-    <div className='text-[red]'>Salam a peyser</div>
+    <HomePage />
+
   )
 }
 
