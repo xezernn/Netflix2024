@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Logo from "../../assets/img/logo.png"
 import Bg from "../../assets/img/bgHeader.jpg"
 import Tv from "../../assets/img/tv.png"
 import Desk from "../../assets/img/desktop.png"
@@ -462,14 +461,108 @@ function HomePage() {
 							</button>
 						</div>
 					</div>
+				</div>
+			</section>
 
+			<footer className='border-t-[8px] border-[#232323]'>
+				<div className='w-[90%] m-auto py-[32px] med:py-[72px]'>
+
+					<div className='mb-3'>
+						<a href="#" className='text-[#ffffffb3] text-[16px]'>Questions? Contact us. </a>
+					</div>
+
+					<ul className="text-[14px] text-[#ffffffb3] w-full underline flex justify-between ">
+						<div className='flex flex-col w-2/4 tabl:flex-row '>
+							<div className='flex flex-col tabl:w-2/4' >
+								<li className='w-full mt-4 ml-3 '>
+									<a className="  " href="">FAQ</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Help Center</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Account</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Media Center</a>
+								</li>
+							</div>
+							<div className='flex flex-col tabl:w-2/4' >
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Investor Relations</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Jobs</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Ways to Watch</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Terms of Use</a>
+								</li>
+							</div>
+
+						</div>
+						<div className='flex flex-col w-2/4 tabl:flex-row ' >
+							<div className='flex flex-col tabl:w-2/4' >
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Privacy</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="#">Cookie Preferences</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Corporate Information</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Contact Us</a>
+								</li>
+							</div>
+							<div className='flex flex-col tabl:w-2/4' >
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Speed Test</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Legal Notices</a>
+								</li>
+								<li className='w-full mt-4 ml-3 '>
+									<a className="   " href="">Only on Netflix</a>
+								</li>
+							</div>
+						</div>
+					</ul>
+
+					<div className='W-full mt-3'>
+						<div className="relative text-white flex items-center w-16 h-[32px] ml-3 med:-ml-2  med:w-[160px] med:px-[10px] ">
+							<div className="absolute left-[20%] top-[15%]   ">
+								<svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+									stroke="currentColor" >
+									<path stroke-linecap="round" stroke-linejoin="round"
+										d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+								</svg>
+							</div>
+							<select className='border-[#808080b3] border z-10 rounded absolute p-[5px] inset-0 bg-transparent appearance-none text-[#00000000] selection:hidden med:selection:block med:text-white med:ml-[20px] ' name="" id="">
+								<option className='text-center text-black bg-transparent  ' value="english">English</option>
+								<option className='text-center text-black bg-transparent  ' value="russian">Русский</option>
+							</select>
+
+							<div className="absolute right-[10%] top-[25%] ">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+									className="default-ltr-cache-4z3qvp e1svuwfo1" data-name="CaretDown" aria-hidden="true">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M11.5976 6.5C11.7461 6.5 11.8204 6.67956 11.7154 6.78457L8.23574 10.2643C8.10555 10.3945 7.89445 10.3945 7.76425 10.2643L4.28457 6.78457C4.17956 6.67956 4.25393 6.5 4.40244 6.5H11.5976Z"
+										fill="currentColor"></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div className='w-full text-[#ffffffb3] text-[0.875rem] mt-6 ml-3 '>
+						Netflix Azerbaijan
+					</div>
 
 				</div>
 
-
-			</section>
-
-			<section className='h-[50vh] bg-white'></section>
+			</footer>
 		</div>
 	)
 }
