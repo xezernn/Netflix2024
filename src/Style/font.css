@@ -81,7 +81,7 @@
 }
 
 .netflixFont{
-    font-family: "Netflix Sans" ;
+    font-family: "Netflix Sans"!important ;
 }
 
 .w-600{
