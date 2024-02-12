@@ -68,22 +68,38 @@
     font-weight: 900;
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff")
 }
-*{
+
+* {
     font-family: sans-serif;
 }
 
-.bgGradient{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);;
+.bgGradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    ;
 }
 
-.bgOpacity{
+.bgOpacity {
     background: rgb(0 0 0 / 40%);
 }
 
-.netflixFont{
-    font-family: "Netflix Sans"!important ;
+.netflixFont {
+    font-family: "Netflix Sans" !important;
 }
 
-.w-600{
+.fonttt {
+    font-family: sans-serif;
+}
+
+.w-600 {
     width: calc(100% + 0.5rem)
+}
+
+.regStepLogo {
+    background: url("../assets/img/regKomp.png") no-repeat 50% 50%;
+    background-size: 260px;
+    height: 90px;
+}
+
+.regChecLogo {
+    background: url("../assets/img/Checkmark.png") no-repeat 50% 50%;
 }
