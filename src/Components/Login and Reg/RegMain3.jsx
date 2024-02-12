@@ -2,10 +2,10 @@ import React from 'react'
 
 function RegMain3() {
     return (
-        <main className='w-full h-[94vh] px-8 pt-[20px] pb-[60px] flex items-center justify-center '>
+        <main className='w-full h-[94vh] px-16 pt-[20px] pb-[60px] flex items-center justify-center '>
             <div className=''>
                 <div className='w-[50px] h-[50px] !bg-50 regChecLogo  med:m-auto  '   ></div>
-                <div className='max-w-[400px] mt-[20px]'>
+                <div className='max-w-[340px] mt-[20px]'>
                     <p className='text-[13px]  '>STEP <strong>2</strong> OF <strong>3</strong> </p>
                     <h1 className='text-[32px] mb-[13px] text-[#333]  font-[700] ' >Choose your plan.</h1>
                     <ul className='text-[18px] my-[15px] max-w-[300px] '>
@@ -23,7 +23,7 @@ function RegMain3() {
                     </ul>
 
                 </div>
-                <button className=' min-w-[400px] w-full mt-[24px] rounded text-[24px] font-[400] min-h-16 py-[14px] px-[2em] bg-[#e50914] text-white  shadow '>Next</button>
+                <button className=' min-w-[340px] md:min-w-[400px] w-full mt-[24px] rounded text-[24px] font-[400] min-h-16 py-[14px] px-[2em] bg-[#e50914] text-white  shadow '>Next</button>
             </div>
         </main>
     )
