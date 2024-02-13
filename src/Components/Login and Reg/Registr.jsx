@@ -4,14 +4,13 @@ import RegMain2 from './RegMain2'
 import RegMain1 from './RegMain1'
 import RegFooter from './RegFooter'
 import RegMain3 from './RegMain3'
+import RegPlan from './RegPlan'
 
 function Registr() {
   return (
     <>
       <RegHeader />
-      <RegMain1 />
-      <RegMain2 />
-      <RegMain3 />
+      <RegPlan />
       <RegFooter />
     </>
   )

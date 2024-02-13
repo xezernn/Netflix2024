@@ -103,3 +103,26 @@
 .regChecLogo {
     background: url("../assets/img/Checkmark.png") no-repeat 50% 50%;
 }
+
+.gradient1 {
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+}
+
+.gradient2 {
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+}
+
+.transition1 {
+    transition: box-shadow 100ms ease-in-out 0s;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 13px -3px; */
+    border-right-color: rebeccapurple;
+    border-bottom-color: rebeccapurple;
+    border-left-color: rebeccapurple;
+}
+
+.redBg {
+    background-color: #e50914;
+}
+.boxsh{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+}

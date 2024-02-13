@@ -10,6 +10,7 @@ export default {
       'med': '600px',
       'md': '768px',
       'tabl': '960px',
+      'xlg': '1060px',
     },
     backgroundSize: {
       'auto': 'auto',
