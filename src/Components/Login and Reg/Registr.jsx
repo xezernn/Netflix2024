@@ -10,8 +10,8 @@ function Registr() {
   return (
     <>
       <RegHeader />
-      <RegPlan />
-      <RegFooter />
+      {/* <RegPlan />
+      <RegFooter /> */}
     </>
   )
 }

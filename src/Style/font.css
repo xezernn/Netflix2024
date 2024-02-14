@@ -103,6 +103,9 @@
 .regChecLogo {
     background: url("../assets/img/Checkmark.png") no-repeat 50% 50%;
 }
+.paymentStepLogo {
+    background: url("../assets/img/Lock.png") no-repeat 50% 50%;
+}
 
 .gradient1 {
     background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
