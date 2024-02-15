@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import RegHeader from './RegHeader'
 import RegFooter from './RegFooter'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { registr } from '../../firebase'
+import { User } from '../../Context/UserContext'
+import { login as loginHandle } from '../../Store/auth'
+
 
 function CreditOption() {
+
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    const { email, setEmail, password, setPassword } = useContext(User)
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+        const user = await registr(email, password)
+        dispatch(loginHandle(user))
+        navigate("/", { replace: true })
+
+    }
+
+
+
     return (
         <>
             <RegHeader />
@@ -56,9 +77,9 @@ function CreditOption() {
                                     <label className='text-[#8c8c8c] text-[16px] ' for="che"> I agree. </label>
                                 </div>
                             </div>
-
-                            <Link to="/signup/planform" className=' block text-center min-w-[340px] md:min-w-[400px] w-full mt-6 rounded text-[24px] font-[400] min-h-16 py-[14px] px-[2em] bg-[#e50914] text-white  shadow '>Start Membership</Link>
-
+                            <form onSubmit={handleSubmit} >
+                                <button type='submit' className=' block text-center min-w-[340px] md:min-w-[400px] w-full mt-6 rounded text-[24px] font-[400] min-h-16 py-[14px] px-[2em] bg-[#e50914] text-white  shadow '>Start Membership</button>
+                            </form>
                             <p className='text-[#8c8c8c]  text-[13px] leading-[1.3] mt-5 '>
                                 This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
                             </p>

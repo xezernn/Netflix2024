@@ -16,32 +16,31 @@ import { User } from './Context/UserContext'
 
 
 function App() {
- 
+
   return (
 
+
+    // <>
+    //   <Routes>
+    //     <Route index element={<Home/>} />
+    //     <Route path='/Register' element={<Register/>} />
+    //     <Route path='/login' element={<Login/>} />
+    //   </Routes>
+    // </>
 
     <>
       <Toaster />
       <Routes>
-        <Route index element={<Home/>} />
-        <Route path='/Register' element={<Register/>} />
-        <Route path='/login' element={<Login/>} />
+        <Route index element={<HomePage />} />
+        <Route path='signup/registration' element={<RegMain />} />
+        <Route path='signup/regform' element={<RegMain2 />} />
+        <Route path='signup/chooseplan' element={<RegMain3 />} />
+        <Route path='signup/planform' element={<RegPlan />} />
+        <Route path='signup/paymentPicker' element={<PaymentPicker />} />
+        <Route path='signup/creditoption' element={<CreditOption />} />
       </Routes>
+
     </>
-
-
-    // <Routes>
-      // <Route index element={<HomePage />} />
-    //   <Route path='signup/registration' element={<RegMain />} />
-    //   <Route path='signup/regform' element={<RegMain2 />} />
-    //   <Route path='signup/chooseplan' element={<RegMain3 />} />
-    //   <Route path='signup/planform' element={<RegPlan />} />
-    //   <Route path='signup/paymentPicker' element={<PaymentPicker />} />
-    //   <Route path='signup/creditoption' element={<CreditOption />} />
-    // </Routes>
-
-    // <HomePage />
-    // <Registr />
 
   )
 }

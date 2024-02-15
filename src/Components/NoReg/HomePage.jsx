@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Bg from "../../assets/img/bgHeader.jpg"
 import Tv from "../../assets/img/tv.png"
 import Desk from "../../assets/img/desktop.png"
@@ -10,9 +10,12 @@ import video1 from '../../assets/img/video1.mp4'
 import video2 from '../../assets/img/video2.mp4'
 import { TECollapse } from "tw-elements-react";
 import { Link } from 'react-router-dom'
+import { User } from '../../Context/UserContext'
 
 function HomePage() {
 
+	const {email, setEmail} = useContext(User)
+	// console.log(email);
 	const [activeElement, setActiveElement] = useState("");
 
 	const handleClick = (value) => {
@@ -72,7 +75,7 @@ function HomePage() {
 									Ready to watch? Enter your email to create or restart your membership.
 								</p>
 								<div className='flex flex-col w-full items-center gap-4 max-w-[36.625rem] mx-auto mt-4 med:flex-row '>
-									<input type="text" className='text-white leading-[1.5] text-[1rem] px-4 pb-2 pt-3 min-h-4 min-w-4 border border-[#808080b3] border-solid rounded bg-[#161616b3] !w-full tabl:py-4  ' placeholder="Email address" id="" />
+									<input onChange={(e)=>{setEmail(e.target.value)}} type="email" className='text-white leading-[1.5] text-[1rem] px-4 pb-2 pt-3 min-h-4 min-w-4 border border-[#808080b3] border-solid rounded bg-[#161616b3] !w-full tabl:py-4  ' placeholder="Email address" id="" />
 									<Link to="signup/registration" className='min-h-[2.9rem] min-w-[154px] tabl:w-[240px] tabl:h-full flex bg-[#E50914] border-0 justify-center items-center rounded text-[1.125rem] py-2 px-4 tabl:px-6 tabl:py-4'>
 										<span className='font-[700] whitespace-nowrap '>Get Started</span>
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
@@ -455,7 +458,7 @@ function HomePage() {
 					<div className='mt-[45px] text-center'>
 						<p className='my-4 text-[1.125rem] tabl:text-[1.5rem] '>Ready to watch? Enter your email to create or restart your membership.</p>
 						<div className='flex flex-col items-center gap-4 max-w-[36.625rem] mx-auto med:flex-row '>
-							<input type="text" className='text-white leading-[1.5] text-[1rem] px-4 pb-2 pt-3 min-h-4 min-w-4 border border-[#808080b3] border-solid rounded bg-[#161616b3] w-full  ' placeholder="Email address" id="" />
+							<input onChange={(e)=>{setEmail(e.target.value)}} type="email" className='text-white leading-[1.5] text-[1rem] px-4 pb-2 pt-3 min-h-4 min-w-4 border border-[#808080b3] border-solid rounded bg-[#161616b3] w-full  ' placeholder="Email address" id="" />
 							<Link to={"signup/registration"} className='min-h-[3rem] min-w-[154px] w-auto flex bg-[#E50914] justify-center items-center rounded text-[1.125rem] py-2 px-4'>
 								<span className='font-[700] '>Get Started</span>
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>

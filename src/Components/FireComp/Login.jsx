@@ -10,8 +10,6 @@ function Login() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const {email, setEmail, password, setPassword} =useContext(User)
-    // const [email, setEmail] = useState("")
-    // const [password, setPassword] = useState("")
 
     async function handleSubmit(e) {
         e.preventDefault()

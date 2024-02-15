@@ -7,17 +7,17 @@ import { User } from '../../Context/UserContext'
 
 
 function Register() {
+    
+    const {email, setEmail, password, setPassword} =useContext(User)
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const {email, setEmail, password, setPassword} =useContext(User)
     
     async function handleSubmit(e) {
         e.preventDefault()
         const user = await registr(email, password)
         dispatch(loginHandle(user))
-        navigate("/login", { replace: true })
+        navigate("/", { replace: true })
     }
-
 
 
     return (
