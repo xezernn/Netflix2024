@@ -13,9 +13,9 @@ function Home() {
         <div>
             <h1>Ha bura homedir</h1>
             <p>
-                <Link to="/register"    >Register ele</Link>
+                <Link to="/register" >Register ele</Link>
             </p>
-            <Link to="/login"    >Login ele</Link>
+            <Link to="/login" >Login ele</Link>
 
 
             <div>
