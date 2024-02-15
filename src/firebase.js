@@ -17,7 +17,7 @@ const auth = getAuth();
 export const registr = async (email, password) => {
     try {
         const { user } = await createUserWithEmailAndPassword(auth, email, password)
-
+        console.log("register oldu");
         return user
     } catch (error) {
         toast.error(error.message);
@@ -27,7 +27,9 @@ export const registr = async (email, password) => {
 export const login = async (email, password) => {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password)
+        console.log("login eledi");
         return user
+
     } catch (error) {
         toast.error(error.message);
     }
@@ -36,7 +38,9 @@ export const login = async (email, password) => {
 export const logout = async () => {
     try {
         await signOut(auth)
+        console.log("cixis eledi");
         return true
+
     } catch (error) {
         toast.error(error.message);
     }
