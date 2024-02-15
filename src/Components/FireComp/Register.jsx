@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { registr } from '../../firebase'
 import { useDispatch } from 'react-redux'
-import { login as loginHandle} from '../../Store/auth'
-
+import { login as loginHandle } from '../../Store/auth'
+import { useNavigate } from 'react-router-dom'
 
 
 function Register() {
     const dispatch = useDispatch()
-
+    const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
@@ -16,6 +16,7 @@ function Register() {
         const user = await registr(email, password)
         // console.log(user);
         dispatch(loginHandle(user))
+        navigate("/login", { replace: true })
     }
 
 
