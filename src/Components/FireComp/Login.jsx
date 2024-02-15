@@ -1,15 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { login, registr } from '../../firebase'
 import { useDispatch } from 'react-redux'
 import { login as loginHandle } from '../../Store/auth'
 import { useNavigate } from 'react-router-dom'
+import { User } from '../../Context/UserContext'
 
 
 function Login() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
+    const {email, setEmail, password, setPassword} =useContext(User)
+    // const [email, setEmail] = useState("")
+    // const [password, setPassword] = useState("")
 
     async function handleSubmit(e) {
         e.preventDefault()

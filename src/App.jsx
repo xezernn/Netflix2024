@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import HomePage from './Components/NoReg/HomePage'
 import { Route, Routes } from 'react-router-dom'
 import RegMain from './Components/Login and Reg/RegMain1'
@@ -12,12 +12,13 @@ import { Toaster } from 'react-hot-toast'
 import Register from './Components/FireComp/Register'
 import Home from './Components/FireComp/Home'
 import Login from './Components/FireComp/Login'
+import { User } from './Context/UserContext'
 
 
 function App() {
  
-
   return (
+
 
     <>
       <Toaster />
