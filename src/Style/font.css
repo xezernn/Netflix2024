@@ -103,6 +103,7 @@
 .regChecLogo {
     background: url("../assets/img/Checkmark.png") no-repeat 50% 50%;
 }
+
 .paymentStepLogo {
     background: url("../assets/img/Lock.png") no-repeat 50% 50%;
 }
@@ -126,6 +127,15 @@
 .redBg {
     background-color: #e50914;
 }
-.boxsh{
+
+.boxsh {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .loginBg {
+        background: url("../assets/img/loginBg.jpg") ;
+    }
+
 }

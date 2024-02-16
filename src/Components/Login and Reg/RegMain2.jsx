@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 import RegHeader from './RegHeader'
 import RegFooter from './RegFooter'
 import { User } from '../../Context/UserContext'
+
+
 function RegMain2() {
 
     const { email, setEmail, password, setPassword } = useContext(User)
-    
     return (
         <>
             <RegHeader />
@@ -27,7 +28,7 @@ function RegMain2() {
                         </div>
 
                     </div>
-                    <Link to="/signup/chooseplan" className='block text-center w-full mt-[24px] rounded text-[24px] font-[400] min-h-16 py-[14px] px-[2em] bg-[#e50914] text-white  shadow '>Next</Link>
+                    <Link to="/signup/chooseplan" disabled={true} className={'block text-center w-full mt-[24px] rounded text-[24px] font-[400] min-h-16 py-[14px] px-[2em] bg-[#e50914] text-white  shadow '+ ( (email!=="" && password.length >6 )? "!opacity-100":"opacity-20  pointer-events-none" ) }>Next</Link>
                 </div>
             </main>
             <RegFooter />

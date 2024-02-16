@@ -19,7 +19,11 @@ export default {
       '50': '50px',
       '16': '4rem',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'loginBg': "red",
+      }
+    },
   },
   plugins: [],
 }

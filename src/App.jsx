@@ -7,27 +7,13 @@ import RegMain3 from './Components/Login and Reg/RegMain3'
 import RegPlan from './Components/Login and Reg/RegPlan'
 import PaymentPicker from './Components/Login and Reg/PaymentPicker'
 import CreditOption from './Components/Login and Reg/CreditOption'
-import { registr } from './firebase'
 import { Toaster } from 'react-hot-toast'
-import Register from './Components/FireComp/Register'
-import Home from './Components/FireComp/Home'
-import Login from './Components/FireComp/Login'
-import { User } from './Context/UserContext'
+import SignIn from './Components/Login and Reg/SignIn'
 
 
 function App() {
 
   return (
-
-
-    // <>
-    //   <Routes>
-    //     <Route index element={<Home/>} />
-    //     <Route path='/Register' element={<Register/>} />
-    //     <Route path='/login' element={<Login/>} />
-    //   </Routes>
-    // </>
-
     <>
       <Toaster />
       <Routes>
@@ -38,6 +24,7 @@ function App() {
         <Route path='signup/planform' element={<RegPlan />} />
         <Route path='signup/paymentPicker' element={<PaymentPicker />} />
         <Route path='signup/creditoption' element={<CreditOption />} />
+        <Route path='login' element={<SignIn />} />
       </Routes>
 
     </>
