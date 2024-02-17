@@ -9,6 +9,7 @@ export default {
       'sm': '500px',
       'med': '600px',
       'md': '768px',
+      "hed": "880px",
       'tabl': '960px',
       'xlg': '1060px',
     },
@@ -22,6 +23,9 @@ export default {
     extend: {
       backgroundImage: {
         'loginBg': "red",
+      },
+      transitionProperty: {
+        'width': 'width',
       }
     },
   },

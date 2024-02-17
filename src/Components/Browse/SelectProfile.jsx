@@ -8,29 +8,29 @@ function SelectProfile() {
                 Kim izliyor?
             </h1>
 
-            <div className="flex flex-row flex-wrap gap-5 mt-8 max-w-[80%] ">
+            <div className="flex justify-center flex-wrap gap-5 mt-8 max-w-[80%] ">
 
-                <Link to={'/browse'} className="flex flex-col w-[10vw]  items-center group gap-2">
+                <Link to={'/browse'} className="flex flex-col min-w-[84px] max-w-[200px] min-h-[84px] max-h-[200px]   items-center group gap-2">
                     <img className="rounded border-2 w-full h-[150px] border-transparent group-hover:border-2  group-hover:border-gray-300" src="https://occ-0-7292-1432.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABfjwXqIYd3kCEU6KWsiHSHvkft8VhZg0yyD50a_pHXku4dz9VgxWwfA2ontwogStpj1NE9NJMt7sCpSKFEY2zmgqqQfcw1FMWwB9.png?r=229" />
                     <p className="text-gray-500 group-hover:text-gray-300"> Room 1 </p>
                 </Link >
 
-                <Link to={'/browse'} className="flex flex-col w-[10vw] items-center group gap-2">
+                <Link to={'/browse'} className="flex flex-col min-w-[84px] max-w-[200px] min-h-[84px] max-h-[200px]  items-center group gap-2">
                     <img className="rounded border-2 w-full h-[150px] border-transparent group-hover:border-2 group-hover:border-gray-300" src="https://occ-0-7292-1432.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABYMk0Ck73kxh_jp_N-hnH8BuT3sFOjDnfyT_eCvlPFtzKXkfeYZi-9T8KWRf1RRGSlJZj5u3dH-mCenw6bx8kOYLk27V-pMb-2G2.png?r=a16" />
                     <p className="text-gray-500 group-hover:text-gray-300"> Room 2 </p>
                 </Link >
 
-                <Link to={'/browse'} className="flex flex-col w-[10vw] items-center group gap-2">
+                <Link to={'/browse'} className="flex flex-col min-w-[84px] max-w-[200px] min-h-[84px] max-h-[200px]  items-center group gap-2">
                     <img className="rounded border-2 w-full h-[150px] border-transparent group-hover:border-2 group-hover:border-gray-300" src="https://occ-0-7292-1432.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABZumJ3wvSKM7od-r3UjhVF9j3yteWlQYA-51F3SNoI682llhul1Xf_CUkMnfP_17Md2lpOOhbwHeGufvo8kOTjptoS_bcwtniHKz.png?r=e6e" />
                     <p className="text-gray-500 group-hover:text-gray-300"> Room 3 </p>
                 </Link >
 
-                <Link to={'/browse'} className="flex flex-col w-[10vw] items-center group gap-2">
+                <Link to={'/browse'} className="flex flex-col min-w-[84px] max-w-[200px] min-h-[84px] max-h-[200px]  items-center group gap-2">
                     <img className="rounded border-2 w-full h-[150px] border-transparent group-hover:border-2 group-hover:border-gray-300" src="https://occ-0-7292-1432.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABZfhNS88u5ao0M3F5X4HRBGCFsqdb2nncDt32YQHoM-1BeLJq93H30hWyleqclSwt1jNGm6l0tkeefKiiCOLLL5gNjpSjS_Xlaij.png?r=bd7" />
                     <p className="text-gray-500 group-hover:text-gray-300"> Room 4 </p>
                 </Link >
                 
-                <Link to={'/browse'} className="flex flex-col w-[10vw] items-center group gap-2">
+                <Link to={'/browse'} className="flex flex-col min-w-[84px] max-w-[200px] min-h-[84px] max-h-[200px]  items-center group gap-2">
                     <img className="rounded border-2 w-full h-[150px] border-transparent group-hover:border-2 group-hover:border-gray-300" src="https://occ-0-7292-1432.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTxO1HAzIh18LDAY7Igs6qQ3GhmsclmpCllWnoojeSDD0lMm9hUCp-C4VGo3cT40xfg_7SpIoY6pmRIl-W7B5CN8kvXCBqM7n8_f.png?r=a4b" />
                     <p className="text-gray-500 group-hover:text-gray-300"> Room 4 </p>
                 </Link >

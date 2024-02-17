@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import SelectProfile from './SelectProfile';
 
 import SignIn from "../Login and Reg/SignIn"
+import BrowseHeader from './BrowseHeader';
 
 
 function Home() {
@@ -22,9 +23,9 @@ function Home() {
 
     if (user) {
         return (
-            <div>
-
-                dshfdhjfdj
+            // bgQeribe
+            <div className='h-[100vh]  bgQeribe '> 
+                <BrowseHeader />
             </div>
         )
     }

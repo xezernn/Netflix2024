@@ -5,15 +5,7 @@ import { logout as logoudHandle } from '../../Store/auth';
 import { useDispatch, useSelector } from 'react-redux';
 
 function Home() {
-    const navigate = useNavigate()
-    const { user } = useSelector(state => state.auth)
-    const dispatch = useDispatch()
-    async function handleLogout() {
-        await logout()
-        dispatch(logoudHandle())
-        navigate("/",{replace:true})
-    }
-
+    
     if (user) {
         return (
             <div>
