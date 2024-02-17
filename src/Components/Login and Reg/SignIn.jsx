@@ -41,8 +41,8 @@ function SignIn() {
                     <h1 className='text-[32px] text-white mb-[28px] font-[600]  '>Sign In</h1>
                     <div>
                         <form onSubmit={handleSubmit} action="">
-                            <input value={email} onChange={(e) => { setEmail(e.target.value) }}  type="email" className=' bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c]  ' placeholder="Email or phone number" />
-                            <input value={password} onChange={(e) => { setPassword(e.target.value) }}  type="password" className=' mt-4 bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c]  ' placeholder="Password" />
+                            <input value={email} onChange={(e) => { setEmail(e.target.value) }}  type="email" className=' bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c] focus:text-white ' placeholder="Email or phone number" />
+                            <input value={password} onChange={(e) => { setPassword(e.target.value) }}  type="password" className=' mt-4 bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c] focus:text-white ' placeholder="Password" />
                             <button className='w-full mt-[36px] rounded text-[16px]  p-3 bg-[#e50914] text-white  shadow '>Sing In</button>
 
                             <div className='flex justify-between mt-3       '>

@@ -29,13 +29,15 @@ export const registr = async (email, password) => {
 }
 
 export const login = async (email, password) => {
-    try {
-        const { user } = await signInWithEmailAndPassword(auth, email, password)
-        toast.success("Giriş olundu!");
-        return user
+    const { user } = await signInWithEmailAndPassword(auth, email, password)
+    if (user) {
+        try {
+            toast.success("Giriş olundu!");
+            return user
 
-    } catch (error) {
-        toast.error(error.message);
+        } catch (error) {
+            toast.error(error.message);
+        }   
     }
 }
 

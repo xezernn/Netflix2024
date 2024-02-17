@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import { logout } from '../../firebase';
 import { logout as logoudHandle } from '../../Store/auth';
 import { useDispatch, useSelector } from 'react-redux';
+import SelectProfile from './SelectProfile';
+
+import SignIn from "../Login and Reg/SignIn"
 
 
 function Home() {
@@ -17,14 +20,21 @@ function Home() {
     }
 
 
-    return (
-        <div>Sen artiq daxil oldun balas
+    if (user) {
+        return (
+            <div>Sen artiq daxil oldun balas
 
+                <SelectProfile />
 
-            <div>
-                <button className=' bg-indigo-700 p-2 text-white ' onClick={handleLogout} >cixis ele ay qa</button>
+                <div>
+                    <button className=' bg-indigo-700 p-2 text-white ' onClick={handleLogout} >cixis ele ay qa</button>
+                </div>
             </div>
-        </div>
+        )
+    }
+
+    return (
+        <SignIn />
     )
 }
 
