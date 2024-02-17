@@ -61,7 +61,7 @@ function HomePage() {
 										</div>
 									</div>
 
-									<button className="border rounded-[4px] font-[500] border-[#e50914] cursor-pointer text-[14px] py-1 px-4 bg-[#e50914] text-white min-h-[30px] ">Sign in</button>
+									<Link to={"/login"} className="border rounded-[4px] font-[500] border-[#e50914] cursor-pointer text-[14px] py-1 px-4 bg-[#e50914] text-white min-h-[30px] ">Sign in</Link>
 								</div>
 							</div>
 						</div>
