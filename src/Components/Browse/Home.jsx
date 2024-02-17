@@ -22,13 +22,9 @@ function Home() {
 
     if (user) {
         return (
-            <div>Sen artiq daxil oldun balas
+            <div>
 
-                <SelectProfile />
-
-                <div>
-                    <button className=' bg-indigo-700 p-2 text-white ' onClick={handleLogout} >cixis ele ay qa</button>
-                </div>
+                dshfdhjfdj
             </div>
         )
     }

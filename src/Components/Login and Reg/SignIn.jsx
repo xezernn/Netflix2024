@@ -18,7 +18,7 @@ function SignIn() {
         const user = await login(email, password)
         console.log(user);
         dispatch(loginHandle(user))
-        navigate("/browse", {
+        navigate("/selectprofile", {
             replace: true
         })
     }
