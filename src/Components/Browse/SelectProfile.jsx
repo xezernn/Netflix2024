@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function SelectProfile() {
     return (
-        <div className="bg-[#141414] h-screen flex flex-col items-center justify-center ">
+        <div className="bg-[#141414] min-h-screen flex flex-col items-center justify-center ">
             <h1 className="text-gray-200 text-5xl">
                 Kim izliyor?
             </h1>
@@ -44,7 +44,7 @@ function SelectProfile() {
 
             </div>
 
-            <button className="border-2 border-gray-600 text-gray-600 px-4 py-1 mt-20 hover:border-gray-400 hover:text-gray-400">
+            <button className="border-2 border-gray-600 text-gray-600 px-4 py-1 mt-20 mb-5 hover:border-gray-400 hover:text-gray-400">
                 Profil yönet
             </button>
 
