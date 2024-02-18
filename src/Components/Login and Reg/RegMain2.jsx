@@ -11,7 +11,7 @@ function RegMain2() {
     return (
         <>
             <RegHeader />
-            <main className='w-full h-[94vh] px-8 pt-[20px] pb-[60px] flex  justify-center '>
+            <main className='w-full min-h-[94vh] px-8 pt-[20px] pb-[60px] flex  justify-center '>
                 <div className=' '>
                     <div className='max-w-[440px] mt-[20px]'>
                         <p className='text-[13px]  '>STEP <strong>1</strong> OF <strong>3</strong> </p>

@@ -24,8 +24,22 @@ function Home() {
     if (user) {
         return (
             // bgQeribe
-            <div className='h-[100vh]  bgQeribe '> 
+            <div className='h-[120vh]  bgQeribe '> 
                 <BrowseHeader />
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
         )
     }

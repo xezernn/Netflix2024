@@ -27,7 +27,7 @@ function HomePage() {
 	return (
 		<div className="bg-black netflixFont">
 
-			<header style={{ background: `url(${Bg}) center/cover` }} className='h-[67vh] tabl:h-[100vh] '>
+			<header style={{ background: `url(${Bg}) center/cover` }} className='min-h-[460px] h-[67vh] tabl:h-[100vh] '>
 				<div className='h-full overflow-clip bgGradient  ' >
 					<div className='bgOpacity h-full relative'>
 						<div className="container max-w-[initial]  med:w-600 p-6 absolute top-0 tabl:w-[80%] tabl:m-auto tabl:left-2/4 tabl:-translate-x-2/4 ">
