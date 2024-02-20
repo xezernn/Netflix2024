@@ -4,31 +4,31 @@ import Adam from "../../../assets/img/jumaniAdam.webp";
 import JumaniLogo from "../../../assets/img/fubar.webp";
 
 function MainIframe() {
-  const [showVideo, setShowVideo] = useState(true);
-  const [showImage, setShowImage] = useState(false); // false
+  const [showImage, setShowImage] = useState(true) // false 
+  
+  // const [showVideo, setShowVideo] = useState(true);
 
+  // useEffect(() => {
+  //   const videoTimer = setTimeout(() => {
+  //     setShowVideo(false);
+  //     setShowImage(true);
+  //   }, 45000);
 
-  useEffect(() => {
-    const videoTimer = setTimeout(() => {
-      setShowVideo(false);
-      setShowImage(true);
-    }, 45000);
+  //   const imageTimer = setTimeout(() => {
+  //     setShowImage(false);
+  //   }, 15000);
 
-    const imageTimer = setTimeout(() => {
-      setShowImage(false);
-    }, 15000);
-
-    return () => {
-      clearTimeout(videoTimer);
-      clearTimeout(imageTimer);
-    };
-  }, []);
+  //   return () => {
+  //     clearTimeout(videoTimer);
+  //     clearTimeout(imageTimer);
+  //   };
+  // }, []);
 
   return (
     
     
     <div className='relative z-10 '>
-      <div className={"relative w-full " + (showVideo ? '' : 'hidden')}>
+      {/* <div className={"relative w-full " + (showVideo ? '' : 'hidden')}>
         <video className='w-full min-h-[550px]' autoPlay muted loop>
           <source className='min-h-[5500px]' src={bgVideo} type="video/mp4" />
         </video>
@@ -50,7 +50,7 @@ function MainIframe() {
 
         </div>
 
-      </div>
+      </div> */}
 
       <div className={"relative w-full  " + (showImage ? '' : 'hidden')}>
 
