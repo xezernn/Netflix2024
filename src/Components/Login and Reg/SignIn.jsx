@@ -16,7 +16,6 @@ function SignIn() {
     async function handleSubmit(e) {
         e.preventDefault()
         const user = await login(email, password)
-        console.log(user);
         dispatch(loginHandle(user))
         navigate("/selectprofile", {
             replace: true

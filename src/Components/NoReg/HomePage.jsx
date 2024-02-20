@@ -15,7 +15,6 @@ import { User } from '../../Context/UserContext'
 function HomePage() {
 
 	const {email, setEmail} = useContext(User)
-	// console.log(email);
 	const [activeElement, setActiveElement] = useState("");
 
 	const handleClick = (value) => {
