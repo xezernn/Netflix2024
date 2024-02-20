@@ -7,7 +7,7 @@ function PaymentPicker() {
     return (
         <>
             <RegHeader />
-            <main className='w-full  px-8  pb-[60px] flex items-center justify-center '>
+            <main className='w-full min-h-[95vh]  px-8 pt-8  pb-[60px] flex items-center justify-center '>
                 <div className='w-full max-w-[500px] '>
                     <div className='w-[50px] h-[50px] !bg-50 bg-left-top paymentStepLogo  med:m-auto  '   ></div>
                     <div className=' mt-[40px] sm:text-center '>

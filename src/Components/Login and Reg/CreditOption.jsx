@@ -28,7 +28,7 @@ function CreditOption() {
     return (
         <>
             <RegHeader />
-            <main className='w-full  px-8  pb-[60px] flex items-center justify-center '>
+            <main className='w-full  min-h-[95vh] px-8  pb-[60px] flex items-center justify-center '>
                 <div className='w-full max-w-[440px] '>
                     <div className=' mt-[40px]  '>
                         <p className='text-[13px]  '>STEP <strong>3</strong> OF <strong>3</strong> </p>

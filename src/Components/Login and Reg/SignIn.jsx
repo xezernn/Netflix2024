@@ -27,7 +27,7 @@ function SignIn() {
     return (
 
 
-        <div className='bg-black loginBg'>
+        <div className='bg-black loginBg '>
             <div className="bgGradient pt-3 ">
                 <header className='flex justify-between items-center h-[45px] sm:h-[75px] tabl:h-[90px] fonttt '>
                     <Link to={"/"} className='ml-[13px] sm:mx-[3%] '>
@@ -36,48 +36,50 @@ function SignIn() {
 
                 </header>
 
-                <main className='px-[5%] mt-3 mx-auto opacity-90 rounded  max-w-[450px] bg-black md:min-h-[660px] md:mb-[90px]  md:px-[68px] md:pt-[60px] md:pb-[40px]  '>
+                <main className=' min-h-[90vh] flex items-center'>
 
-                    <h1 className='text-[32px] text-white mb-[28px] font-[600]  '>Sign In</h1>
-                    <div>
-                        <form onSubmit={handleSubmit} action="">
-                            <input value={email} onChange={(e) => { setEmail(e.target.value) }}  type="email" className=' bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c] focus:text-white ' placeholder="Email or phone number" />
-                            <input value={password} onChange={(e) => { setPassword(e.target.value) }}  type="password" className=' mt-4 bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c] focus:text-white ' placeholder="Password" />
-                            <button className='w-full mt-[36px] rounded text-[16px]  p-3 bg-[#e50914] text-white  shadow '>Sing In</button>
+                    <div className='px-[5%] mt-3 mx-auto opacity-90 rounded  max-w-[450px] bg-black md:min-h-[660px] md:mb-[90px]  md:px-[68px] md:pt-[60px] md:pb-[40px]  ' >
+                        <h1 className='text-[32px] text-white mb-[28px] font-[600]  '>Sign In</h1>
+                        <div>
+                            <form onSubmit={handleSubmit} action="">
+                                <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" className=' bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c] focus:text-white ' placeholder="Email or phone number" />
+                                <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" className=' mt-4 bg-[#333] rounded-[4px] w-full px-5 py-4  text-[14px] text-[#8c8c8c] focus:text-white ' placeholder="Password" />
+                                <button className='w-full mt-[36px] rounded text-[16px]  p-3 bg-[#e50914] text-white  shadow '>Sing In</button>
 
-                            <div className='flex justify-between mt-3       '>
+                                <div className='flex justify-between mt-3       '>
 
 
-                                <div className="inline-flex items-center gap-2 ">
-                                    <label className="relative flex items-center cursor-pointer" htmlFor="check">
-                                        <input type="checkbox"
-                                            className="before:content[''] peer relative h-4 w-4 cursor-pointer appearance-none rounded-[2px]  bg-[#737373] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
-                                            id="check" />
-                                        <span
-                                            className="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                                                stroke="currentColor" >
-                                                <path
-                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                ></path>
-                                            </svg>
-                                        </span>
-                                    </label>
-                                    <label className="text-[#b3b3b3] text-[13px]" htmlFor="check">
-                                        Remember Me
-                                    </label>
+                                    <div className="inline-flex items-center gap-2 ">
+                                        <label className="relative flex items-center cursor-pointer" htmlFor="check">
+                                            <input type="checkbox"
+                                                className="before:content[''] peer relative h-4 w-4 cursor-pointer appearance-none rounded-[2px]  bg-[#737373] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                                                id="check" />
+                                            <span
+                                                className="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                                                    stroke="currentColor" >
+                                                    <path
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                    ></path>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <label className="text-[#b3b3b3] text-[13px]" htmlFor="check">
+                                            Remember Me
+                                        </label>
+                                    </div>
+                                    <span className='text-right text-white'>Need help?</span>
                                 </div>
-                                <span className='text-right text-white'>Need help?</span>
+
+                            </form>
+
+                            <div className='mb-[100px]  '>
+                                <p className='text-[#737373] mt-4 mb-[10px] '>
+                                    New to Netflix? <Link className='text-white text-[16px] ' to={"/signup/regform"}>Sign up now.</Link>
+                                </p>
+                                <small className='text-[13px] font-[300] text-[#8c8c8c]  ' >This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" className='text-[#0071eb]  '> Learn more.</a> </small>
+
                             </div>
-
-                        </form>
-
-                        <div className='mb-[100px]  '>
-                            <p className='text-[#737373] mt-4 mb-[10px] '>
-                                New to Netflix? <Link className='text-white text-[16px] ' to={"signup/registration"}>Sign up now.</Link>
-                            </p>
-                            <small className='text-[13px] font-[300] text-[#8c8c8c]  ' >This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" className='text-[#0071eb]  '> Learn more.</a> </small>
-
                         </div>
                     </div>
                 </main>

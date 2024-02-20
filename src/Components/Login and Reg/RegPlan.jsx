@@ -8,7 +8,7 @@ function RegPlan() {
     return (
         <>
             <RegHeader />
-            <main className='w-full px-[25px] pt-[20px] pb-[60px] tabl:px-[38px] tabl:py-[24px] flex items-center justify-center '>
+            <main className='w-full px-[25px] min-h-[95vh] pt-[20px] pb-[60px] tabl:px-[38px] tabl:py-[24px] flex items-center justify-center '>
                 <div className='tabl:mt-6'>
                     <p className='text-[13px]  '>STEP <strong>1</strong> OF <strong>3</strong> </p>
                     <h1 className='text-[32px] mb-[13px] text-[#333]  font-[700] ' >Choose the plan that’s right for you</h1>

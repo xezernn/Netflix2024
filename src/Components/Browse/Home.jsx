@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { logout } from '../../firebase';
 import { logout as logoudHandle } from '../../Store/auth';
 import { useDispatch, useSelector } from 'react-redux';
-import SelectProfile from './SelectProfile';
 
 import SignIn from "../Login and Reg/SignIn"
 import BrowseHeader from './BrowseHeader';
+import Main from './BrowseMain/Main';
 
 
 function Home() {
@@ -24,22 +24,12 @@ function Home() {
     if (user) {
         return (
             // bgQeribe
-            <div className='h-[120vh]  bgQeribe '> 
+            <div className='h-[200vh]  '>
                 <BrowseHeader />
+                <Main />
 
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+                <div className='h-[20vh]'></div>
+
             </div>
         )
     }

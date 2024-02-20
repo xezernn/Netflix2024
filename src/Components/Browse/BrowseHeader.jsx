@@ -24,7 +24,7 @@ function BrowseHeader() {
 
 
     return (
-        <header className={'gradProf transition-all duration-700 h-[41px] sm:px-4 tabl:h-[68px] flex items-center w-full ' + (scroll> 5 && "bg-[#141414] fixed " ) }>
+        <header className={'gradProf transition-all duration-700 h-[41px] sm:px-4 tabl:h-[68px] flex items-center w-full fixed z-[11] ' + (scroll> 5 && "bg-[#141414] fixed " ) }>
             <div className='px-[1.5%] tabl:px-[2.9%] flex justify-between w-full '  >
                 <div className='flex items-center gap-[12px] xlg:gap-[45px] '>
                     <Link to={"/browse"}>
