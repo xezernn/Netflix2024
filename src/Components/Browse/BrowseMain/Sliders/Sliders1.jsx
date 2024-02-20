@@ -1,24 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Mousewheel, Navigation } from 'swiper/modules';
 import "../../../../Style/Swiper.css"
+import { Data } from '../../../../Context/DataContext';
 
 
 function Sliders1() {
+
+  const data = useContext(Data)
+  console.log(data);
+
   return (
-    <>
+    <div className='flex flex-col h-[150px] my-[3vw] '>
+      <h1 className='text-[14px] md:text-[1.5vw] px-[4%] mb-[.5rem] font-[500] text-white  '>The Witcher içeriğini beğenenlere öneriler</h1>
       <Swiper
         navigation={true}
         loop={true}
-        slidesPerView={2.3}
+        slidesPerView={2}
         spaceBetween={2}
         mousewheel={true}
         centeredSlides={true}
-        pagination={{
-          clickable: true,
-        }}
+        
         modules={[Navigation, Pagination, Mousewheel]}
         breakpoints={{
           500: {
@@ -38,19 +42,19 @@ function Sliders1() {
             spaceBetween: 8,
           },
         }}
-        className="mySwiper"
+        className="Salammmmmmmmmmmmm Necesiz"
       >
-        <SwiperSlide>Slide 1 </SwiperSlide>
-        <SwiperSlide>Slide 2 </SwiperSlide>
-        <SwiperSlide>Slide 3 </SwiperSlide>
-        <SwiperSlide>Slide 4 </SwiperSlide>
-        <SwiperSlide>Slide 5 </SwiperSlide>
-        <SwiperSlide>Slide 6 </SwiperSlide>
-        <SwiperSlide>Slide 7 </SwiperSlide>
-        <SwiperSlide>Slide 8 </SwiperSlide>
-        <SwiperSlide>Slide 9 </SwiperSlide>
+        {
+          data.length !== 0 &&
+          data?.titles?.map((item) => (
+            <SwiperSlide><img src={item?.jawSummary?.backgroundImage?.url} alt="video img" /> </SwiperSlide>
+        ))
+
+        }
+
+
       </Swiper>
-    </>
+    </div>
   );
 }
 

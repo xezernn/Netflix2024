@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import HomePage from './Components/NoReg/HomePage'
 import { Route, Routes } from 'react-router-dom'
 import RegMain from './Components/Login and Reg/RegMain1'
@@ -11,15 +11,22 @@ import { Toaster } from 'react-hot-toast'
 import SignIn from './Components/Login and Reg/SignIn'
 import Home from './Components/Browse/Home'
 import SelectProfile from './Components/Browse/SelectProfile'
+import { useSelector } from 'react-redux'
+
 
 
 function App() {
+
+  const { user } = useSelector(state => state.auth)
 
   return (
     <>
       <Toaster />
       <Routes>
-        <Route index element={<HomePage />} />
+        {
+          user ? <Route index element={<Home />} /> :
+            <Route index element={<HomePage />} />
+        }
         <Route path='signup/registration' element={<RegMain />} />
         <Route path='signup/regform' element={<RegMain2 />} />
         <Route path='signup/chooseplan' element={<RegMain3 />} />

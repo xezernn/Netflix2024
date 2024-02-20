@@ -1,6 +1,5 @@
 .swiper {
     width: 100%;
-    height: 200px;
 }
 
 .swiper-wrapper {
@@ -11,8 +10,10 @@
     text-align: center;
     font-size: 18px;
     background: red;
-    height:115px;
-    width: 200px;
+    min-height:115px;
+    height: 15vw;
+    max-height: 130px;
+    /* width: 200px; */
     /* padding: 28.125% 0; */
     display: flex;
     justify-content: center;
@@ -26,31 +27,19 @@
     object-fit: cover;
 }
 
-.swiper-pagination-horizontal {
-    background-color: yellow;
-    width: 180px !important;
-    height: min-content !important;
-    top: 0 !important;
-    right: 4% !important;
-    left: 85% !important;
-}
-
-.swiper-pagination-bullet {
-    background-color: #4d4d4d;
-    height: 2px;
-    margin-left: 1px;
-    width: 12px;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
-
+    z-index: 999;
     width: 4%;
-    height: 90%;
+    height: 110%;
     position: absolute;
     top: 50%;
     transform: translate(0%, -44.5%);
     z-index: 100;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
     background: #14141480;
 }
 
@@ -65,28 +54,28 @@
 @media only screen and (min-width: 500px) {
 
     .swiper-slide {
-        width: 32%;
+        width: 32% !important; 
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 760px) {
 
     .swiper-slide {
-        width: 32%;
+        width: 24% !important; 
     }
 }
 
 @media only screen and (min-width: 1100px) {
 
     .swiper-slide {
-        width: 19%;
+        width: 19% !important; 
     }
 }
 
 @media only screen and (min-width: 1250px) {
 
     .swiper-slide {
-        width: 16%;
+        width: 16% !important; 
     }
 }
 

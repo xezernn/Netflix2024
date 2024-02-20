@@ -27,7 +27,7 @@ function MainIframe() {
   return (
     
     
-    <div className='relative z-10  xsm:min-h-[200px] xxm:min-h-[250px]'>
+    <div className='relative z-10  xsm:min-h-[200px] xxm:min-h-[250px]  md:min-h-[500px] '>
       {/* <div className={"relative w-full " + (showVideo ? '' : 'hidden')}>
         <video className='w-full min-h-[550px]' autoPlay muted loop>
           <source className='min-h-[5500px]' src={bgVideo} type="video/mp4" />
@@ -55,7 +55,7 @@ function MainIframe() {
       <div className={"relative w-full  " + (showImage ? '' : 'hidden')}>
 
         <img className='w-full' src={Adam} alt="" />
-        <div className='absolute z-[45] text-white top-[31%] left-[4%] w-[36%]'>
+        <div className='absolute z-[45] text-white top-[23%] left-[4%] w-[36%]'>
           <img className='w-full  max-h-[11vw] mb-[1vw]'  src={JumaniLogo} alt="" />
           {/* <h1 className='text-[1.8vw] my-[1vw] shadow-black font-[600]   '>2. Sezonu Şimdi İzleyin</h1> */}
           <p className='text-[1.3vw]'>
