@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import bgVideo from "../../../assets/img/mainBgVideo.mp4";
+import bgVideo from "../../../assets/img/mainBgVideo.mp4";
 import Adam from "../../../assets/img/jumaniAdam.webp";
 import JumaniLogo from "../../../assets/img/fubar.webp";
 
@@ -30,7 +30,7 @@ function MainIframe() {
     <div className='relative z-10 '>
       <div className={"relative w-full " + (showVideo ? '' : 'hidden')}>
         <video className='w-full min-h-[550px]' autoPlay muted loop>
-          <source className='min-h-[5500px]' src={""} type="video/mp4" />
+          <source className='min-h-[5500px]' src={bgVideo} type="video/mp4" />
         </video>
         <div className='absolute z-[45] text-white top-[38%] left-[4%] w-[36%]'>
           <div className='w-[56%] mb-[.5rem] '>
