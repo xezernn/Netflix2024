@@ -10,7 +10,7 @@ function Home() {
 
     if (user) {
         return (
-            <div className='min-h-[200vh] bg-[#141414] '>
+            <div className='min-h-[200vh]  '>
                 <BrowseHeader />
                 <Main />
             </div>

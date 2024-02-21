@@ -7,10 +7,10 @@ import "../../../../Style/Swiper.css"
 import { Data } from '../../../../Context/DataContext';
 
 
-function Sliders1() {
+function Sliders1({ x, y }) {
 
   const data = useContext(Data)
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className='flex flex-col h-[150px] my-[3vw] '>
@@ -22,7 +22,7 @@ function Sliders1() {
         spaceBetween={2}
         mousewheel={true}
         centeredSlides={true}
-        
+
         modules={[Navigation, Pagination, Mousewheel]}
         breakpoints={{
           500: {
@@ -45,10 +45,12 @@ function Sliders1() {
         className="Salammmmmmmmmmmmm Necesiz"
       >
         {
-          data.length !== 0 &&
-          data?.titles?.map((item) => (
-            <SwiperSlide><img src={item?.jawSummary?.backgroundImage?.url} alt="video img" /> </SwiperSlide>
-        ))
+          // data.length !== 0 &&
+          data?.titles?.slice(x, y).map((item) => (
+            <SwiperSlide>
+              <img src={item?.jawSummary?.backgroundImage?.url} alt="video img" />
+            </SwiperSlide>
+          ))
 
         }
 
