@@ -8,7 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function BrowseHeader() {
     const navigate = useNavigate()
-    // const { user } = useSelector(state => state.auth)
     const dispatch = useDispatch()
     const [searchClick, setSearchClick] = useState(false)
     async function handleLogout() {
@@ -17,13 +16,9 @@ function BrowseHeader() {
         navigate("/", { replace: true })
     }
 
-    const [scroll, setScroll] = useState(0)
-    window.addEventListener("scroll", () => {setScroll(window.scrollY);})
-
-
 
     return (
-        <header className={'gradProf transition-all duration-700 h-[41px] sm:px-4 tabl:h-[68px] flex items-center w-full fixed z-[11] ' + (scroll> 5 && "bg-[#141414] " ) }>
+        <header className={'gradProf transition-all duration-700 h-[41px] sm:px-4 tabl:h-[68px] flex items-center w-full fixed z-[11] bg-[#141414]'  }>
             <div className='px-[1.5%] tabl:px-[2.9%] flex justify-between w-full '  >
                 <div className='flex items-center gap-[12px] xlg:gap-[45px] '>
                     <Link to={"/browse"}>
@@ -69,8 +64,7 @@ function BrowseHeader() {
 
                     <div className='hidden hed:block text-[white]'>
                         <ul className='flex gap-[18px] xlg:text-[14px] xlg:text-[#e5e5e5] text-[10.9px] font-[500] items-center '  >
-                            <li className='font-bold'>
-                                <Link to={"/"}> Ana Sayfa </Link></li>
+                            <li className='font-bold'> <Link to={""}> Ana Sayfa </Link></li>
                             <li><Link to={"/genre"}> Diziler </Link></li>
                             <li><Link to={"/filmler"}> Filmler </Link></li>
                             <li><Link to={"/latest"}> En Yeniler </Link></li>

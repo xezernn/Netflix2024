@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function BrowseFooter() {
+
+	const [btn, setBtn] = useState("Service Code")
 	return (
 		<footer className='min-h-[40vh] bg-[#141414] text-[grey] font-[500] pt-[70px]'>
 
@@ -38,7 +40,7 @@ function BrowseFooter() {
 				</div>
 
 				<div>
-					<button className='mb-5 p-2 text-[13px] border border-[grey]' >Service Code </button>
+					<button onClick={() => {setBtn("691-611")}} className='mb-5 p-2 text-[13px] border border-[grey]' >{btn} </button>
 				</div>
 
 				<p className='text-[11px] pb-[15px]'>

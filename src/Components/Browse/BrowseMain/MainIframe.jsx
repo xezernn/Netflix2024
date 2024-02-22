@@ -19,7 +19,7 @@ function MainIframe() {
 
     return () => {
       clearTimeout(videoTimer);
-      clearTimeout(imageTimer);
+      // clearTimeout(imageTimer);
     };
   }, []);
 
