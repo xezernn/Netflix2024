@@ -9,9 +9,8 @@ import { nanoid } from '@reduxjs/toolkit';
 
 
 function Sliders1({ x, y }) {
-
   const data = useContext(Data)
-  // console.log(data);
+
 
   return (
     <div className='flex flex-col  '>
