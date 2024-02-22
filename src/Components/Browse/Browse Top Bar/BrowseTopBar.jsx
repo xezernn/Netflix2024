@@ -3,8 +3,7 @@ import { Menu, Transition } from '@headlessui/react'
 import { Link } from 'react-router-dom'
 import React from 'react'
 
-function BrowseTopBar({header}) {
-
+function BrowseTopBar({elem}) {
     const [scroll, setScroll] = useState(0)
     window.addEventListener("scroll", () => {setScroll(window.scrollY);})
 
@@ -14,7 +13,7 @@ function BrowseTopBar({header}) {
             <div className='flex gap-16 items-center'>
                 <h1 className=' text-[22px] md:text-[32px] leading-[22px] font-[700]	 '>
                     {
-                        header ? header : "Diziler"
+                        elem ? elem : "Diziler"
                     }
                 </h1>
                 <div>

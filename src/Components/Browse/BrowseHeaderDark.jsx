@@ -64,7 +64,7 @@ function BrowseHeader() {
 
                     <div className='hidden hed:block text-[white]'>
                         <ul className='flex gap-[18px] xlg:text-[14px] xlg:text-[#e5e5e5] text-[10.9px] font-[500] items-center '  >
-                            <li className='font-bold'> <Link to={""}> Ana Sayfa </Link></li>
+                            <li className='font-bold'> <Link to={"/"}> Ana Sayfa </Link></li>
                             <li><Link to={"/genre"}> Diziler </Link></li>
                             <li><Link to={"/filmler"}> Filmler </Link></li>
                             <li><Link to={"/latest"}> En Yeniler </Link></li>

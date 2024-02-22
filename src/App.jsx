@@ -13,6 +13,8 @@ import Home from './Components/Browse/Home'
 import SelectProfile from './Components/Browse/SelectProfile'
 import { useSelector } from 'react-redux'
 import Diziler from './Components/Browse/Diziler'
+import EnYeniler from './Components/Browse/EnYeniler'
+import Filmler from './Components/Browse/Filmler'
 
 
 
@@ -39,8 +41,8 @@ function App() {
         <Route path='selectprofile' element={<SelectProfile />} />
         <Route path='browse' element={<Home />} />
         {user && <Route path='genre' element={<Diziler />} />}
-        {user && <Route path='filmler' element={<Diziler />} />}
-        {user && <Route path='latest' element={<Diziler />} />}
+        {user && <Route path='filmler' element={<Filmler />} />}
+        {user && <Route path='latest' element={<EnYeniler />} />}
       </Routes>
 
     </>

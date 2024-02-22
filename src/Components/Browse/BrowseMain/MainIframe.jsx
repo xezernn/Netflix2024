@@ -7,27 +7,27 @@ function MainIframe() {
   const [showImage, setShowImage] = useState(false) // false 
   const [showVideo, setShowVideo] = useState(true);
 
-  useEffect(() => {
-    const videoTimer = setTimeout(() => {
-      setShowVideo(false);
-      setShowImage(true);
-    }, 15000);
+  // useEffect(() => {
+  //   const videoTimer = setTimeout(() => {
+  //     setShowVideo(false);
+  //     setShowImage(true);
+  //   }, 15000);
 
-    // const imageTimer = setTimeout(() => {
-    //   setShowImage(false);
-    // }, 15000);
+  //   // const imageTimer = setTimeout(() => {
+  //   //   setShowImage(false);
+  //   // }, 15000);
 
-    return () => {
-      clearTimeout(videoTimer);
-      // clearTimeout(imageTimer);
-    };
-  }, []);
+  //   return () => {
+  //     clearTimeout(videoTimer);
+  //     // clearTimeout(imageTimer);
+  //   };
+  // }, []);
 
   return (
 
 
     <div className='relative z-10  xsm:min-h-[200px] xxm:min-h-[250px]  md:min-h-[500px] '>
-      <div className={"relative w-full max-h-[100vh]  " + (showVideo ? '' : 'hidden')}>
+      {/* <div className={"relative w-full max-h-[100vh]  " + (showVideo ? '' : 'hidden')}>
         <video className='w-full xsm:min-h-[250px] max-h-[100vh] object-cover' autoPlay muted loop>
           <source className='' src={bgVideo} type="video/mp4" />
         </video>
@@ -51,9 +51,9 @@ function MainIframe() {
 
         </div>
 
-      </div>
+      </div> */}
 
-      <div className={"relative w-full max-h-[100vh] " + (showImage ? '' : 'hidden')}>
+      <div className={"relative w-full max-h-[100vh] " + (!showImage ? '' : 'hidden')}>
 
         <img className='w-full max-h-[105vh]' src={Adam} alt="" />
         <div className='absolute z-[45] text-white top-[23%] left-[4%] w-[36%]'>
