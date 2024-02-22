@@ -16,8 +16,6 @@ function DataContext({ children }) {
             .then(data => setMyData(data))
     }, [])
 
-
-    console.log(myData);
     return (
         <Data.Provider value={myData} >
             {children}

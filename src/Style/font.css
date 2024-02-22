@@ -113,6 +113,11 @@
     display: block;
 }
 
+.swpierGradi {
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 28%, rgba(255,255,255,0) 100%);
+}
+
 @media only screen and (min-width: 768px) {
 
     .loginBg {

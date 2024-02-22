@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { Pagination, Mousewheel, Navigation } from 'swiper/modules';
 import "../../../../Style/Swiper.css"
 import { Data } from '../../../../Context/DataContext';
+import { nanoid } from '@reduxjs/toolkit';
 
 
 function Sliders1({ x, y }) {
@@ -13,9 +14,9 @@ function Sliders1({ x, y }) {
   // console.log(data);
 
   return (
-    <div className='flex flex-col h-[150px] my-[3vw] '>
-      <h1 className='text-[14px] md:text-[1.5vw] px-[4%] mb-[.5rem] font-[500] text-white  '>The Witcher içeriğini beğenenlere öneriler</h1>
+    <div className='flex flex-col  '>
       <Swiper
+        key={nanoid}
         navigation={true}
         loop={true}
         slidesPerView={2}
@@ -35,11 +36,11 @@ function Sliders1({ x, y }) {
           },
           1100: {
             slidesPerView: 5,
-            spaceBetween: 2,
+            spaceBetween: 10,
           },
           1250: {
             slidesPerView: 6,
-            spaceBetween: 8,
+            spaceBetween: 10,
           },
         }}
         className="Salammmmmmmmmmmmm Necesiz"

@@ -52,9 +52,9 @@ function MainIframe() {
 
       </div> */}
 
-      <div className={"relative w-full  " + (showImage ? '' : 'hidden')}>
+      <div className={"relative w-full max-h-[100vh] " + (showImage ? '' : 'hidden')}>
 
-        <img className='w-full' src={Adam} alt="" />
+        <img className='w-full max-h-[105vh]' src={Adam} alt="" />
         <div className='absolute z-[45] text-white top-[23%] left-[4%] w-[36%]'>
           <img className='w-full  max-h-[11vw] mb-[1vw]'  src={JumaniLogo} alt="" />
           {/* <h1 className='text-[1.8vw] my-[1vw] shadow-black font-[600]   '>2. Sezonu Şimdi İzleyin</h1> */}
