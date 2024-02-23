@@ -9,7 +9,7 @@ function BrowseTopBar({elem}) {
 
 
     return (
-        <div className={'fixed top-[41px] tabl:top-[68px] z-[20]  flex justify-between items-center  w-full px-[4%] h-[41px] tabl:h-[68px] transition-all duration-700 text-white ' +(scroll > 5 && "bg-[#141414]") }>
+        <div className={'fixed top-[41px] tabl:top-[68px] z-[11]  flex justify-between items-center  w-full px-[4%] h-[41px] tabl:h-[68px] transition-all duration-700 text-white ' +(scroll > 5 && "bg-[#141414]") }>
             <div className='flex gap-16 items-center'>
                 <h1 className=' text-[22px] md:text-[32px] leading-[22px] font-[700]	 '>
                     {
@@ -141,7 +141,7 @@ function BrowseTopBar({elem}) {
 
 
             </div>
-            <div className='flex justify-around items-center w-[88px] h-[30px] border text-white cursor-pointer '>
+            <div className='flex justify-around items-center w-[88px] h-[30px] border relative z-[9] text-white cursor-pointer '>
                 <div className=''>
                     <svg className='h-[18px] w-[18px]' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-name="List" aria-labelledby=":rl:" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 6H0V4H24V6ZM24 18V20H0V18H24ZM0 13H12V11H0V13Z" fill="currentColor"></path></svg>
                 </div>

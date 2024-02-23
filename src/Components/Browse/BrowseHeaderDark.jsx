@@ -220,8 +220,8 @@ function BrowseHeader() {
                                 <div className='hidden xlg:block border-[white] border-t-[5px] border-l-[5px] border-r-[5px] border-b-[0px] ml-[10px] bg-white '>dfghjgfds</div>
                             </Link >
 
-                            <div id='hoverDiv3' className='z-[11] fixed right-0 top-[5%] hidden  h-40 w-[200px]  '>
-                                <div id="dropdownHover" className={"z-10 fixed right-[6%] top-[9%] w-[215px] bg-black opacity-85 divide-y divide-gray-100  shadow  "}>
+                            <div id='hoverDiv3' className='z-[511] fixed right-0 top-[5%] bg-[red] hidden h-40 w-[200px]  '>
+                                <div id="dropdownHover" className={"z-[550] fixed right-[6%] top-[9%] w-[215px] bg-black opacity-85 divide-y divide-gray-100  shadow  "}>
                                     <ul className=" pt-[10px] text-sm  text-white" aria-labelledby="dropdownHoverButton">
                                         <li className=" px-[10px] py-[5px]">
                                             <Link to={"/selectprofile"} className="flex text-center gap-[10px]">
