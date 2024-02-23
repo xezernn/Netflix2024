@@ -48,7 +48,7 @@ function Sliders1({ x, y }) {
           // data.length !== 0 &&
           data?.titles?.slice(x, y).map((item) => (
             <SwiperSlide>
-              <img src={item?.jawSummary?.backgroundImage?.url} alt="video img" />
+              <img className='rounded-[3px]' src={item?.jawSummary?.backgroundImage?.url} alt="video img" />
             </SwiperSlide>
           ))
 

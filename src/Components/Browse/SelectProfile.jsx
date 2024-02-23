@@ -32,7 +32,7 @@ function SelectProfile() {
                 
                 <Link to={'/browse'} className="flex flex-col min-w-[84px] max-w-[200px] min-h-[84px] max-h-[200px]  items-center group gap-2">
                     <img className="rounded border-2 w-full h-[150px] border-transparent group-hover:border-2 group-hover:border-gray-300" src="https://occ-0-7292-1432.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTxO1HAzIh18LDAY7Igs6qQ3GhmsclmpCllWnoojeSDD0lMm9hUCp-C4VGo3cT40xfg_7SpIoY6pmRIl-W7B5CN8kvXCBqM7n8_f.png?r=a4b" />
-                    <p className="text-gray-500 group-hover:text-gray-300"> Room 4 </p>
+                    <p className="text-gray-500 group-hover:text-gray-300"> Room 5 </p>
                 </Link >
 
                 {/* <Link to={'/browse'} className="flex flex-col items-center group gap-3 ">
