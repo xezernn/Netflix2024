@@ -1,7 +1,6 @@
 import React, { createContext, useState } from 'react'
+
 export const User = createContext(null)
-
-
 
 function UserContext({ children }) {
 

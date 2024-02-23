@@ -3,7 +3,6 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 import dotenv from "dotenv";
 import toast from "react-hot-toast";
 
-// dotenv.config();
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_APP_API_KEY,
@@ -30,16 +29,32 @@ export const registr = async (email, password) => {
 
 export const login = async (email, password) => {
     const { user } = await signInWithEmailAndPassword(auth, email, password)
-    if (user) {
+    // if (user) {
         try {
             toast.success("Giriş olundu!");
             return user
 
         } catch (error) {
-            toast.error(error.message);
+            // toast.error(error.code);
+            if(error.code === 400){
+                console.log("ay peyser parol ve ya sifr sevdir");
+            }
         }   
-    }
+    // }
 }
+
+
+// createUserWithEmailAndPassword(auth, email, password)
+//   .then((userCredential) => {
+//     // Signed up 
+//     const user = userCredential.user;
+//     // ...
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//     // ..
+//   });
 
 export const logout = async () => {
     try {

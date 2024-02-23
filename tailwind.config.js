@@ -15,6 +15,7 @@ export default {
       "hed": "880px",
       'tabl': '960px',
       'xlg': '1060px',
+      'xmd': '1200px',
     },
     backgroundSize: {
       'auto': 'auto',

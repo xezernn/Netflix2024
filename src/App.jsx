@@ -15,22 +15,16 @@ import { useSelector } from 'react-redux'
 import Diziler from './Components/Browse/Diziler'
 import EnYeniler from './Components/Browse/EnYeniler'
 import Filmler from './Components/Browse/Filmler'
-
-
-
+import MyList from './Components/Browse/MyList'
 
 function App() {
-
   const { user } = useSelector(state => state.auth)
 
   return (
     <>
       <Toaster />
       <Routes>
-        {
-          user ? <Route index element={<Home />} /> :
-            <Route index element={<HomePage />} />
-        }
+        {user ? <Route index element={<SelectProfile />} /> : <Route index element={<HomePage />} />}
         <Route path='signup/registration' element={<RegMain />} />
         <Route path='signup/regform' element={<RegMain2 />} />
         <Route path='signup/chooseplan' element={<RegMain3 />} />
@@ -43,10 +37,9 @@ function App() {
         {user && <Route path='genre' element={<Diziler />} />}
         {user && <Route path='filmler' element={<Filmler />} />}
         {user && <Route path='latest' element={<EnYeniler />} />}
+        {user && <Route path='my-list' element={<MyList />} />}
       </Routes>
-
     </>
-
   )
 }
 

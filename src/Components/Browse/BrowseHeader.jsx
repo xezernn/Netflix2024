@@ -57,7 +57,7 @@ function BrowseHeader() {
                                         <Link to="/latest" className="block py-4 text-center">En Yeniler</Link>
                                     </li>
                                     <li>
-                                        <Link to="" className="block py-4 text-center">Listem</Link>
+                                        <Link to="/my-list" className="block py-4 text-center">Listem</Link>
                                     </li>
                                     <li>
                                         <Link to="" className="block py-4 text-center">Dile Göre Göz At</Link>
@@ -74,7 +74,7 @@ function BrowseHeader() {
                             <li><Link to={"/genre"}> Diziler </Link></li>
                             <li><Link to={"/filmler"}> Filmler </Link></li>
                             <li><Link to={"/latest"}> En Yeniler </Link></li>
-                            <li><Link to={""}> Listem </Link></li>
+                            <li><Link to={"/my-list"}> Listem </Link></li>
                             <li><Link to={""}> Dile Göre Göz At </Link></li>
 
                         </ul>

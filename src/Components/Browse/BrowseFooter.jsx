@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function BrowseFooter() {
-
 	const [btn, setBtn] = useState("Service Code")
 	return (
 		<footer className='min-h-[40vh] bg-[#141414] text-[grey] font-[500] pt-[70px]'>
