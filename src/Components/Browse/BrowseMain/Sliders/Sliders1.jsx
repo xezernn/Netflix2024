@@ -6,6 +6,7 @@ import { Pagination, Mousewheel, Navigation } from 'swiper/modules';
 import "../../../../Style/Swiper.css"
 import { Data } from '../../../../Context/DataContext';
 import { nanoid } from '@reduxjs/toolkit';
+import { Link } from 'react-router-dom';
 
 
 function Sliders1({ x, y }) {
@@ -42,13 +43,14 @@ function Sliders1({ x, y }) {
             spaceBetween: 10,
           },
         }}
-        className="Salammmmmmmmmmmmm Necesiz"
       >
         {
           // data.length !== 0 &&
           data?.titles?.slice(x, y).map((item) => (
             <SwiperSlide>
-              <img className='rounded-[3px]' src={item?.jawSummary?.backgroundImage?.url} alt="video img" />
+              <Link to={"/watch"} className=''>
+                <img className='rounded-[3px]' src={item?.jawSummary?.backgroundImage?.url} alt="video img" />
+              </Link>
             </SwiperSlide>
           ))
 

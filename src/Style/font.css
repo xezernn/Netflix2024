@@ -109,7 +109,9 @@
 
 .hoverElem1:hover #hoverDiv1,
 .hoverElem2:hover #hoverDiv2,
-.hoverElem3:hover #hoverDiv3 {
+.hoverElem3:hover #hoverDiv3, 
+.hoverElem4:hover #hoverDiv4
+{
     display: block;
 }
 

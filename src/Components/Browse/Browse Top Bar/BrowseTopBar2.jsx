@@ -17,7 +17,7 @@ function BrowseTopBar2() {
                 </h1>
                 <div className='flex gap-4'>
 
-                    <div>
+                    <div className='hidden xmd:block'>
                         <span className='mr-2'>Tercihlerinizi Seçin</span>
                         <Menu as="div" className="relative inline-block text-left">
 
@@ -61,7 +61,7 @@ function BrowseTopBar2() {
 
                     </div>
 
-                    <div>
+                    <div >
 
                         <Menu as="div" className="relative inline-block text-left">
 
@@ -100,7 +100,7 @@ function BrowseTopBar2() {
                     </div>
 
 
-                    <div>
+                    <div className='hidden xmd:block'>
                         <span className='mr-2'>Sıralama ölçüdü</span>
                         <Menu as="div" className="relative inline-block text-left">
 
@@ -120,13 +120,6 @@ function BrowseTopBar2() {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-
-                                {/*
-                                Sizin için öneriler
-Çıkış Yılı
-A-Z
-Z-A
-                                */}
                                 <Menu.Items className="absolute text-[14px] font-[200] left-0 z-10 mt-2 origin-top-right shadow-lg ring-1 bg-[#000000e6] text-white  ring-black ring-opacity-5 focus:outline-none flex  w-full min-w-[min-centent]">
                                     <div className="">
                                         <Menu.Item>

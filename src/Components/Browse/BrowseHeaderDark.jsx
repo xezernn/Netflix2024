@@ -40,7 +40,7 @@ function BrowseHeader() {
                             <div id="dropdownHover" className={"z-[51] fixed left-[5%] sm:left-[5%] top-[9%]  w-[55%] max-w-[260px] bg-black opacity-85 divide-y border-t-[3px] divide-gray-100  shadow  "}>
                                 <ul className="py-2 text-sm  text-white" aria-labelledby="dropdownHoverButton">
                                     <li>
-                                        <Link to={"/"} className="block py-4 text-center">Ana Sayfa</Link>
+                                        <Link to={"/browse"} className="block py-4 text-center">Ana Sayfa</Link>
                                     </li>
                                     <li>
                                         <Link to="/genre" className="block py-4 text-center">Diziler</Link>
@@ -64,7 +64,7 @@ function BrowseHeader() {
 
                     <div className='hidden hed:block text-[white]'>
                         <ul className='flex gap-[18px] xlg:text-[14px] xlg:text-[#e5e5e5] text-[10.9px] font-[500] items-center '  >
-                            <li className='font-bold'> <Link to={"/"}> Ana Sayfa </Link></li>
+                            <li className='font-bold'> <Link to={"/browse"}> Ana Sayfa </Link></li>
                             <li><Link to={"/genre"}> Diziler </Link></li>
                             <li><Link to={"/filmler"}> Filmler </Link></li>
                             <li><Link to={"/latest"}> En Yeniler </Link></li>

@@ -17,6 +17,7 @@ import EnYeniler from './Components/Browse/EnYeniler'
 import Filmler from './Components/Browse/Filmler'
 import MyList from './Components/Browse/MyList'
 import DileGore from './Components/Browse/DileGore'
+import VideoPlayer from './Components/Player/VideoPlayer'
 
 function App() {
   const { user } = useSelector(state => state.auth)
@@ -40,8 +41,12 @@ function App() {
         {user && <Route path='latest' element={<EnYeniler />} />}
         {user && <Route path='my-list' element={<MyList />} />}
         {user && <Route path='original-audio' element={<DileGore />} />}
+        {user && <Route path='watch' element={<VideoPlayer />} />}
       </Routes>
+
     </>
+
+
   )
 }
 
