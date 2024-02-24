@@ -9,7 +9,7 @@ lerna-debug.log*
 
 node_modules
 src/assets/playerVideo.mp4
-# src/Components/Player/VideoPlayer.jsx
+src/Components/Player/VideoPlayer.jsx
 dist
 dist-ssr
 *.local
