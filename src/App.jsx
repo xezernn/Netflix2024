@@ -18,7 +18,6 @@ import Filmler from './Components/Browse/Filmler'
 import MyList from './Components/Browse/MyList'
 import DileGore from './Components/Browse/DileGore'
 import VideoPlayer from './Components/Player/VideoPlayer'
-import AdaptiveMain from './Components/AdaptiveWebSite/AdaptiveMain'
 import AdaptiveHome from './Components/AdaptiveWebSite/AdaptiveHome'
 
 function App() {
