@@ -25,8 +25,7 @@ function App() {
 	if (window.innerWidth <= 450) {
 		return (
 			<>
-				<h1>{window.innerWidth}</h1>
-				{/* <Toaster />
+				<Toaster />
 				<Routes>
 					{user ? <Route index element={<AdaptiveHome />} /> : <Route index element={<HomePage />} />}
 					<Route path='signup/registration' element={<RegMain />} />
@@ -37,9 +36,9 @@ function App() {
 					<Route path='signup/creditoption' element={<CreditOption />} />
 					<Route path='login' element={<SignIn />} />
 					<Route path='selectprofile' element={<SelectProfile />} />
-					<Route path='browse' element={<AdaptiveHome />} /> */}
+					<Route path='browse' element={<AdaptiveHome />} />
 					{/* {user && <Route path='app-download' element={<DileGore />} />}  */}
-				{/* </Routes > */}
+				</Routes >
 
 
 			</>
