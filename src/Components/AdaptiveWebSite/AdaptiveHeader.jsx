@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function AdaptiveHeader() {
+function AdaptiveHeader({nav , setNav}) {
   return (
-    <header className='bg-[#000000a3] fixed w-full px-5 z-20 h-[50px] flex items-center justify-between '>
+    <header className={`fixed w-full px-5 z-20 h-[50px] flex items-center justify-between ` + (nav ? "bg-[#000000a3]": "bg-black") }>
 
       <div className='flex gap-4 items-center'>
-        <button className="">
+        <button onClick={()=>{setNav(!nav)}} className="">
           <img className='h-5' src="https://assets.nflxext.com/ffe/siteui/akira/fallback/hamburger.gif" alt="" />
         </button>
         <Link className='h-6 w-[84px] block overflow-hidden'>

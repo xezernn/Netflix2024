@@ -22,7 +22,7 @@ import AdaptiveHome from './Components/AdaptiveWebSite/AdaptiveHome'
 
 function App() {
 	const { user } = useSelector(state => state.auth)
-	if (window.innerWidth <= 450) {
+	if (window.innerWidth <= 481) {
 		return (
 			<>
 				<Toaster />
