@@ -21,7 +21,6 @@ function DataContext({ children }) {
             .then(res => res.json())
             .then(data => setMyData(data))
     },[])
-    console.log(myData);
     return (
         <Data.Provider value={myData} >
             {children}

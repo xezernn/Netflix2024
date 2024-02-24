@@ -5,12 +5,12 @@ function VideoPlayer() {
 	const videoRef = useRef(null)
 	const [pouse, setPouse] = useState(true)
 	const [mute, setMute] = useState(true)
+	const [hidden, setHidden] = useState(true)
 	const [width, setWidth] = useState(0)
 
 	function handlePlay() {
 		pouse ? videoRef.current.play() : videoRef.current.pause()
 		setPouse(!pouse)
-		setTime(videoRef.current.currentTime)
 	}
 
 	function skipForward(x) {
@@ -49,20 +49,26 @@ function VideoPlayer() {
 	}
 
 
-	function progressLoop() {
-		setInterval(function () {
-			if (videoRef.current.currentTime !== 0) {
-				setWidth((videoRef.current.currentTime / videoRef.current.duration) * 100)
-				console.log("dsfdf");
-			}
-		}, 40);
-	}
+	useEffect(() => {
+		function progressLoop() {
+			setInterval(() => {
+				if (videoRef.current && videoRef.current.currentTime !== 0) {
+					setWidth((videoRef.current.currentTime / videoRef.current.duration) * 100);
+				}
+			}, 40);
+		}
 
-	progressLoop();
+		progressLoop();
+
+		return () => {
+			clearInterval(progressLoop);
+		};
+	}, []);
+
 
 	return (
 		<>
-			<div className='relative h-screen bg-black '>
+			<div  className='relative h-screen bg-black' >
 				<div className='absolute left-0 right-0 bottom-[5%] top-[5%] z-[10]  '>
 					<video
 						className='w-full h-full object-cover'
@@ -75,7 +81,7 @@ function VideoPlayer() {
 				</div>
 
 				<div className='absolute inset-0 z-20 text-white h-[50px] w-full  ' >
-					<div className='fixed top-[4%] px-[2%] flex w-full justify-between '>
+					<div className={`fixed top-[4%] px-[2%] flex w-full justify-between ` + (!hidden && "hidden")}>
 						<Link to={"/browse"}>
 							<svg className='w-[4vw] h-[4vw] max-w-[40px] max-h-[40px] hover:scale-[1.15]' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" aria-labelledby=":rcr:" aria-hidden="true">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.41421 10.9998L21 10.9998L21 12.9998L6.41421 12.9998L11.7071 18.2927L10.2929 19.7069L3.29289 12.7069C2.90237 12.3164 2.90237 11.6832 3.29289 11.2927L10.2929 4.29272L11.7071 5.70694L6.41421 10.9998Z" fill="currentColor"></path>
@@ -87,7 +93,7 @@ function VideoPlayer() {
 
 
 
-					<div className='fixed w-full bottom-0 z-30 h-[110px] px-[18px] flex flex-col justify-between '>
+					<div className={`fixed w-full bottom-0 z-30 h-[110px] px-[18px] flex flex-col justify-between ` + (!hidden && "hidden")}>
 						<div className='relative flex items-center '>
 							<div className='absolute w-[94%] left-0 h-[5px] bg-[gray] flex items-center '>
 								<div style={{ width: width + "%" }} className={`h-full absolute bg-[red] flex items-center justify-end `}>

@@ -18,36 +18,57 @@ import Filmler from './Components/Browse/Filmler'
 import MyList from './Components/Browse/MyList'
 import DileGore from './Components/Browse/DileGore'
 import VideoPlayer from './Components/Player/VideoPlayer'
+import AdaptiveMain from './Components/AdaptiveWebSite/AdaptiveMain'
+import AdaptiveHome from './Components/AdaptiveWebSite/AdaptiveHome'
 
 function App() {
-  const { user } = useSelector(state => state.auth)
+	const { user } = useSelector(state => state.auth)
+	if (window.innerWidth <= 400) {
+		return (
+			<>
+				<Toaster />
+				<Routes>
+					{user ? <Route index element={<AdaptiveHome />} /> : <Route index element={<HomePage />} />}
+					<Route path='signup/registration' element={<RegMain />} />
+					<Route path='signup/regform' element={<RegMain2 />} />
+					<Route path='signup/chooseplan' element={<RegMain3 />} />
+					<Route path='signup/planform' element={<RegPlan />} />
+					<Route path='signup/paymentPicker' element={<PaymentPicker />} />
+					<Route path='signup/creditoption' element={<CreditOption />} />
+					<Route path='login' element={<SignIn />} />
+					<Route path='browse' element={<AdaptiveHome />} />
+					{/* {user && <Route path='app-download' element={<DileGore />} />} */}
 
-  return (
-    <>
-      <Toaster />
-      <Routes>
-        {user ? <Route index element={<SelectProfile />} /> : <Route index element={<HomePage />} />}
-        <Route path='signup/registration' element={<RegMain />} />
-        <Route path='signup/regform' element={<RegMain2 />} />
-        <Route path='signup/chooseplan' element={<RegMain3 />} />
-        <Route path='signup/planform' element={<RegPlan />} />
-        <Route path='signup/paymentPicker' element={<PaymentPicker />} />
-        <Route path='signup/creditoption' element={<CreditOption />} />
-        <Route path='login' element={<SignIn />} />
-        <Route path='selectprofile' element={<SelectProfile />} />
-        <Route path='browse' element={<Home />} />
-        {user && <Route path='genre' element={<Diziler />} />}
-        {user && <Route path='filmler' element={<Filmler />} />}
-        {user && <Route path='latest' element={<EnYeniler />} />}
-        {user && <Route path='my-list' element={<MyList />} />}
-        {user && <Route path='original-audio' element={<DileGore />} />}
-        {user && <Route path='watch' element={<VideoPlayer />} />}
-      </Routes>
+				</Routes>
+			</>
+		)
+	}
 
-    </>
+	return (
+		<>
+			<Toaster />
+			<Routes>
+				{user ? <Route index element={<SelectProfile />} /> : <Route index element={<HomePage />} />}
+				<Route path='signup/registration' element={<RegMain />} />
+				<Route path='signup/regform' element={<RegMain2 />} />
+				<Route path='signup/chooseplan' element={<RegMain3 />} />
+				<Route path='signup/planform' element={<RegPlan />} />
+				<Route path='signup/paymentPicker' element={<PaymentPicker />} />
+				<Route path='signup/creditoption' element={<CreditOption />} />
+				<Route path='login' element={<SignIn />} />
+				<Route path='selectprofile' element={<SelectProfile />} />
+				<Route path='browse' element={<Home />} />
+				{user && <Route path='genre' element={<Diziler />} />}
+				{user && <Route path='filmler' element={<Filmler />} />}
+				{user && <Route path='latest' element={<EnYeniler />} />}
+				{user && <Route path='my-list' element={<MyList />} />}
+				{user && <Route path='original-audio' element={<DileGore />} />}
+				{user && <Route path={`browse/:id`} element={<VideoPlayer />} />}
+			</Routes>
+		</>
 
 
-  )
+	)
 }
 
 export default App

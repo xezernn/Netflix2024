@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import bgVideo from "../../../assets/img/mainBgVideo.mp4";
 import Adam from "../../../assets/img/jumaniAdam.webp";
 import JumaniLogo from "../../../assets/img/fubar.webp";
+import { Link } from 'react-router-dom';
 
 function MainIframe() {
   const [showImage, setShowImage] = useState(false) // false 
@@ -37,10 +38,10 @@ function MainIframe() {
           </div>
 
           <div className='mt-[1.5vw] flex gap-4 items-center '>
-            <button className='text-black flex items-center gap-3 py-[.3rem] px-[1rem] md:py-[.8rem] md:px-[1.5rem] cursor-pointer bg-white rounded '>
+            <Link to={"/browse/watch"} className='text-black flex items-center gap-3 py-[.3rem] px-[1rem] md:py-[.8rem] md:px-[1.5rem] cursor-pointer bg-white rounded '>
               <svg className='w-4 h-4 md:w-6 md:h-6 ' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-name="Play" aria-hidden="true"><path d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z" fill="currentColor"></path></svg>
               <span className='text-[10px] sm:text-[.8rem] md:text-[1.1rem] leading-[1.6rem] font-bold '>Oynat</span>
-            </button>
+            </Link>
 
 
             <button className='flex items-center gap-3 py-[.3rem] px-[1rem] md:py-[.8rem] md:px-[1.5rem] cursor-pointer whitespace-nowrap bg-[#6d6d6db3] rounded '>
