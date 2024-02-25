@@ -6,15 +6,15 @@ import NavBar from './NavBar'
 
 function AdaptiveHome() {
 
-    const [nav, setNav] = useState(true)
+    
     return (
         <div className='bg-[#141414]'>
             <div className='h-[50px]'>
-                <AdaptiveHeader nav={nav} setNav={setNav} />
+                <AdaptiveHeader  />
             </div>
             <AdaptiveMain />
             <AdaptiveFooter />
-            <NavBar nav={nav} />
+            <NavBar/>
 
         </div>
     )

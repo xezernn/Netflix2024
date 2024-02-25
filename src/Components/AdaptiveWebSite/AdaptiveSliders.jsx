@@ -23,7 +23,7 @@ export default function AdaptiveSlider() {
                 {
                     data?.titles?.slice(0,15).map((item) => (
                         <SwiperSlide>
-                            <Link to={"/app-download"} className=''>
+                            <Link to={'/browse/player'} className=''>
                                 <img className='rounded-[3px]' src={item?.jawSummary?.backgroundImage?.url} alt="video img" />
                             </Link>
                         </SwiperSlide>

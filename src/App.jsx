@@ -19,6 +19,8 @@ import MyList from './Components/Browse/MyList'
 import DileGore from './Components/Browse/DileGore'
 import VideoPlayer from './Components/Player/VideoPlayer'
 import AdaptiveHome from './Components/AdaptiveWebSite/AdaptiveHome'
+import AdaptiveApp from './Components/AdaptiveWebSite/AdaptiveApp'
+import AdaptiveBrowse from './Components/AdaptiveWebSite/AdaptiveBrowse'
 
 function App() {
 	const { user } = useSelector(state => state.auth)
@@ -36,8 +38,10 @@ function App() {
 					<Route path='signup/creditoption' element={<CreditOption />} />
 					<Route path='login' element={<SignIn />} />
 					<Route path='selectprofile' element={<SelectProfile />} />
-					<Route path='browse' element={<AdaptiveHome />} />
-					{/* {user && <Route path='app-download' element={<DileGore />} />}  */}
+					{user && <Route path='browse' element={<AdaptiveHome />} />}
+					{user && <Route path='browse/watch' element={<AdaptiveHome />} />}
+					{user && <Route path='browse/player' element={<AdaptiveApp />} />}
+					{user && <Route path='browse/list' element={<AdaptiveBrowse />} />}
 				</Routes >
 
 

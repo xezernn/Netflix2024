@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { NavPro } from '../../Context/NavBar'
 
-function AdaptiveHeader({nav , setNav}) {
+function AdaptiveHeader() {
+  const {nav , setNav} = useContext(NavPro)
+  console.log(nav);
+
   return (
     <header className={`fixed w-full px-5 z-20 h-[50px] flex items-center justify-between ` + (nav ? "bg-[#000000a3]": "bg-black") }>
 
