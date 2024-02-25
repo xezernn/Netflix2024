@@ -21,7 +21,7 @@ function Sliders1({ x, y }) {
         loop={true}
         slidesPerView={2}
         spaceBetween={2}
-        mousewheel={true}
+        mousewheel={false}
         centeredSlides={true}
 
         modules={[Navigation, Pagination, Mousewheel]}

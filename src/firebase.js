@@ -29,18 +29,15 @@ export const registr = async (email, password) => {
 
 export const login = async (email, password) => {
     const { user } = await signInWithEmailAndPassword(auth, email, password)
-    // if (user) {
+    if (user) {
         try {
             toast.success("Giriş olundu!");
             return user
 
         } catch (error) {
-            // toast.error(error.code);
-            if(error.code === 400){
-                console.log("ay peyser parol ve ya sifr sevdir");
-            }
-        }   
-    // }
+            console.log( error);
+        }
+    }
 }
 
 

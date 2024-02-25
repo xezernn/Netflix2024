@@ -28,7 +28,7 @@ function NavBar() {
         <div style={{ transform: nav ? `translateX(-100%)` : `translateX(0%)` }} className='fixed z-[50] top-[49px] h-[calc(100%-50px)] overflow-y-scroll transition-transform -translate-x-full bottom-0 text-[#808080] font-bold  w-[70%] bg-black pt-[10px] '>
 
             <div>
-                <Link className='flex gap-2 items-center mb-[5px] pl-5 '>
+                <Link to={"/selectprofile"} className='flex gap-2 items-center mb-[5px] pl-5 '>
                     <img className='w-8 h-8' src={"https://occ-0-7292-1432.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABZfhNS88u5ao0M3F5X4HRBGCFsqdb2nncDt32YQHoM-1BeLJq93H30hWyleqclSwt1jNGm6l0tkeefKiiCOLLL5gNjpSjS_Xlaij.png?r=bd7"} alt="profile icon" />
                     <div className='flex flex-col justify-start'>
                         <h5 className='text-[16px]'>Room 1</h5>
