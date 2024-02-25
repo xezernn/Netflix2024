@@ -6,18 +6,18 @@ import NavBar from './NavBar'
 
 function AdaptiveHome() {
 
-    
+
     return (
         <div className='bg-[#141414]'>
             <div className='h-[50px]'>
-                <AdaptiveHeader  />
+                <AdaptiveHeader />
             </div>
             <AdaptiveMain />
             <AdaptiveFooter />
-            <NavBar/>
+            <NavBar />
 
         </div>
     )
 }
-
+console.clear();
 export default AdaptiveHome

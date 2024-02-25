@@ -6,7 +6,6 @@ import BrowseTopBar from './Browse Top Bar/BrowseTopBar'
 
 function Filmler() {
     const [elem, setElem] = useState("Filmler")
-    // console.log(elem);
     return (
         <>
             <BrowseHeaderDark />
