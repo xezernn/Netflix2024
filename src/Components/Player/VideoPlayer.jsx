@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import video from '../../assets/playerVideo.mp4'
+// import video from '../../assets/playerVideo.mp4'
 // import video from '../../assets/img/mainBgVideo.mp4'
 import { Link } from 'react-router-dom'
 function VideoPlayer() {
@@ -74,7 +74,8 @@ function VideoPlayer() {
 					<video
 						className='w-full h-full object-cover'
 						ref={videoRef}
-						src={video}
+						src={"video"}
+						// ha burdada videonu acmaq lazimdir haaa
 					/>
 
 					<div onClick={handlePlay} className='absolute top-[5%] bottom-[14%] z-[20] w-full h-80% '></div>
