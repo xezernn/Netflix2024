@@ -3,7 +3,6 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 import dotenv from "dotenv";
 import toast from "react-hot-toast";
 
-
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_APP_API_KEY,
     authDomain: import.meta.env.VITE_APP_AUTH_DOMAIN,
@@ -40,18 +39,6 @@ export const login = async (email, password) => {
     }
 }
 
-
-// createUserWithEmailAndPassword(auth, email, password)
-//   .then((userCredential) => {
-//     // Signed up 
-//     const user = userCredential.user;
-//     // ...
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     // ..
-//   });
 
 export const logout = async () => {
     try {

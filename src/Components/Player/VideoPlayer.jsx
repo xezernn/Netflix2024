@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-// import video from '../../assets/playerVideo.mp4'
-import video from '../../assets/img/mainBgVideo.mp4'
+import video from '../../assets/playerVideo.mp4'
+// import video from '../../assets/img/mainBgVideo.mp4'
 import { Link } from 'react-router-dom'
 function VideoPlayer() {
 	const videoRef = useRef(null)
