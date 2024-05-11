@@ -14,13 +14,13 @@ function MainIframe() {
       setShowImage(true);
     }, 15000);
 
-    // const imageTimer = setTimeout(() => {
-    //   setShowImage(false);
-    // }, 15000);
+    const imageTimer = setTimeout(() => {
+      setShowImage(true);
+    }, 15000);
 
     return () => {
       clearTimeout(videoTimer);
-      // clearTimeout(imageTimer);
+      clearTimeout(imageTimer);
     };
   }, []);
 
