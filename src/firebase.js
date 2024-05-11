@@ -35,7 +35,7 @@ export const login = async (email, password) => {
             return user
 
         } catch (error) {
-            console.log( error);
+            toast.error( error.message);
         }
     }
 }
